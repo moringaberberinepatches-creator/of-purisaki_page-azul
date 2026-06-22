@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import {
   ArrowRight,
   ChevronDown,
@@ -12,6 +20,7 @@ import {
   Check,
   Flame,
 } from "lucide-react";
+
 
 const CTA_URL =
   "https://5d7d7dfic5b81t1g8jvo3g2vzs.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=berberine_patch_us&creative=review_v1";
