@@ -99,12 +99,19 @@ const copy = {
       "And he can't take his eyes off her.",
       "It hurts, doesn't it?",
     ],
-    storyClose: (
+    storyCloseTitle: (
       <>
-        Now picture that woman being <span className="text-primary glow-text">you</span> — wearing the{" "}
-        <span className="text-primary glow-text">Berberine Patch</span>. Try it for a full{" "}
-        <span className="text-primary glow-text">30 days</span>. If you're not stunned by what you see in the mirror, we refund{" "}
-        <span className="text-primary glow-text">100% of your money</span>. The risk is entirely on us.
+        Now picture yourself wearing the{" "}
+        <span className="text-primary glow-text">Berberine Patch</span>.
+      </>
+    ),
+    storyCloseSubtitle: (
+      <>
+        Lose weight while you sleep — stick the patch on, easy and fast, and that's it: see results in{" "}
+        <span className="text-primary glow-text">one week</span> or your money back.{" "}
+        <span className="text-primary glow-text">The risk is entirely on us.</span> Try it for{" "}
+        <span className="text-primary glow-text">30 days</span>. If you're not impressed looking in the mirror, we refund{" "}
+        <span className="text-primary glow-text">100% of your money</span>.
       </>
     ),
     eyebrow2: "Real before & after",
