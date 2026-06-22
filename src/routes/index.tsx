@@ -99,8 +99,14 @@ const copy = {
       "And he can't take his eyes off her.",
       "It hurts, doesn't it?",
     ],
-    storyClose:
-      "Now picture that woman being you — wearing the Berberine Patch. Try it for a full 30 days. If you're not stunned by what you see in the mirror, we refund 100% of your money. The risk is entirely on us.",
+    storyClose: (
+      <>
+        Now picture that woman being <span className="text-primary glow-text">you</span> — wearing the{" "}
+        <span className="text-primary glow-text">Berberine Patch</span>. Try it for a full{" "}
+        <span className="text-primary glow-text">30 days</span>. If you're not stunned by what you see in the mirror, we refund{" "}
+        <span className="text-primary glow-text">100% of your money</span>. The risk is entirely on us.
+      </>
+    ),
     eyebrow2: "Real before & after",
     h2b: "What 30 days with the patch can do",
     h2bSub:
@@ -299,8 +305,16 @@ const copy = {
       "E seu marido não consegue tirar os olhos dela.",
       "Dói, eu sei que dói, não é?",
     ],
-    storyClose:
-      "Agora imagine você usando o adesivo de berberina. Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma semana ou o seu dinheiro de volta. O risco é todo nosso. Experimente por 30 dias. Se você não ficar impressionada se olhando no espelho, reembolsamos 100% do seu dinheiro.",
+    storyClose: (
+      <>
+        Agora imagine você usando o <span className="text-primary glow-text">adesivo de berberina</span>.{" "}
+        Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma{" "}
+        <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
+        <span className="text-primary glow-text">O risco é todo nosso.</span> Experimente por{" "}
+        <span className="text-primary glow-text">30 dias</span>. Se você não ficar impressionada se olhando no espelho, reembolsamos{" "}
+        <span className="text-primary glow-text">100% do seu dinheiro</span>.
+      </>
+    ),
     eyebrow2: "Antes e depois reais",
     h2b: "O que 30 dias com o adesivo podem fazer",
     h2bSub:
@@ -643,8 +657,8 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-8 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 to-primary/5 p-8 sm:p-10 text-center shadow-lg">
-            <p className="text-lg sm:text-xl text-foreground leading-relaxed font-medium">
+          <div className="mt-10">
+            <p className="text-3xl sm:text-4xl md:text-5xl font-black leading-[0.95] tracking-tight uppercase text-center">
               {t.storyClose}
             </p>
           </div>
