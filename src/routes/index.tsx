@@ -21,6 +21,17 @@ import {
   Flame,
 } from "lucide-react";
 
+import heroAsset from "@/assets/hero.png.asset.json";
+import sarahAsset from "@/assets/sarah.jpg.asset.json";
+import lindaAsset from "@/assets/linda.jpg.asset.json";
+import jessicaAsset from "@/assets/jessica.jpg.asset.json";
+import pouchAsset from "@/assets/product-pouch.webp.asset.json";
+import resultsAsset from "@/assets/product-results.webp.asset.json";
+import boxAsset from "@/assets/product-box.webp.asset.json";
+import designAsset from "@/assets/product-design.webp.asset.json";
+import discreetAsset from "@/assets/product-discreet.webp.asset.json";
+
+
 
 const CTA_URL =
   "https://5d7d7dfic5b81t1g8jvo3g2vzs.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=berberine_patch_us&creative=review_v1";
