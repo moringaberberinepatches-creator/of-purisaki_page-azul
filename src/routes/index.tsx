@@ -141,13 +141,341 @@ const copy = {
     finalSub:
       "Every day you wait is another day of lost energy, lost confidence and lost time with the people you love. The next step is one click away — on the official manufacturer page.",
     finalCta: "Claim my Berberine Patch",
+    beforeAfter: [
+      { name: "Sarah, 47", line: "Lost 14 lbs and got her confidence back." },
+      { name: "Maria, 51", line: "Flat belly for the first time in 10 years." },
+      { name: "Camila, 44", line: "Back in a bikini after two kids." },
+      { name: "Renata, 39", line: "Dropped 3 dress sizes in 30 days." },
+      { name: "Linda, 49", line: "Her old shorts now slide right off." },
+    ],
+    comparison: {
+      eyebrow: "The smart choice",
+      title: "Berberine Patch vs ",
+      titleAccent: "Ozempic & Mounjaro",
+      subtitle:
+        "Same goal — a slimmer body and steady blood sugar. Very different paths. See why thousands of women are switching to the natural patch.",
+      patch: {
+        title: "Berberine Patch",
+        subtitle: "100% natural • transdermal",
+        badge: "RECOMMENDED",
+        items: [
+          "No needles, no injections",
+          "100% natural — Berberine + botanicals",
+          "No nausea or harsh side effects",
+          "No prescription needed",
+          "From $1.65 per day",
+          "Discreet daily patch — works 24/7",
+          "30-day money-back guarantee",
+        ],
+        cta: "Choose the patch",
+      },
+      ozempic: {
+        title: "Ozempic",
+        subtitle: "Semaglutide • injection",
+        items: [
+          "Weekly self-injection",
+          "Synthetic GLP-1 hormone",
+          "Frequent nausea, vomiting, fatigue",
+          "Prescription required",
+          "$900–$1,300 per month",
+          "Weight often returns when you stop",
+          "No money-back guarantee",
+        ],
+      },
+      mounjaro: {
+        title: "Mounjaro",
+        subtitle: "Tirzepatide • injection",
+        items: [
+          "Weekly self-injection",
+          "Dual synthetic hormone",
+          "Nausea, diarrhea, pancreas warnings",
+          "Prescription required",
+          "$1,000–$1,500 per month",
+          "Rebound weight gain reported",
+          "No money-back guarantee",
+        ],
+      },
+      disclaimer:
+        "Berberine Patch is a natural dietary supplement, not a medication. Comparison is for informational purposes only and is not medical advice.",
+    },
+    gallery: {
+      items: [
+        {
+          title: "Berberine Patch Original",
+          text: "30-day program — 30 transdermal patches with our proprietary berberine blend. Nature's Ozempic working 24/7.",
+        },
+        {
+          title: "Real, Visible Results",
+          text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
+        },
+        {
+          title: "Skin-Fitting Design",
+          text: "Secure adhesive that's unlikely to fall off — wear it while you work, sleep or rest at home.",
+        },
+        {
+          title: "Discreet & Invisible",
+          text: "Thin, inconspicuous and blends seamlessly under any outfit. Gentle formula suitable for most skin types.",
+        },
+        {
+          title: "30-Patch Box",
+          text: "30 patches per pack — a full 30-day program at 7cm diameter, ready to start your transformation today.",
+        },
+      ],
+      cta: "I want mine now",
+    },
+    testimonials: {
+      titleStart: "Women are ",
+      titleAccent: "talking",
+      titleEnd: ".",
+      items: [
+        {
+          q: "Within a few weeks my fasting glucose dropped so much my doctor literally asked what I was doing differently. I feel like ME again.",
+          a: "Sarah M., 47",
+        },
+        {
+          q: "I lived tired, with that stubborn belly that wouldn't go away. After one month with the patch, my clothes started fitting again. No crazy diet.",
+          a: "Linda K., 52",
+        },
+        {
+          q: "The late-afternoon sugar cravings? Gone. Sounds small but it changed my entire routine — and my body.",
+          a: "Jessica T., 44",
+        },
+      ],
+    },
+    bonus: {
+      eyebrow: "Free Bonus · Limited Time",
+      titleStart: "Get ",
+      titleAccent1: "Purisaki Life",
+      titleMid: " — your 30-day companion app, ",
+      titleAccent2: "FREE",
+      titleEnd: " with every order.",
+      subtitle:
+        "A private 30-day program built around the Berberine Patch — daily guides, meal plans, recipes, mindset tips and progress tracking. Yours at no extra cost when you order today.",
+      insideTitle: "What's inside the app:",
+      items: [
+        "Step-by-step User Guide — apply your patch the right way, every time",
+        "30-Day Meal Plan — breakfast, lunch, dinner & snacks designed to support fat-burn",
+        "Healthy Recipes — quick, simple, family-friendly",
+        "Daily Mindset Tips — stay consistent and motivated",
+        "Progress Tracker — see your wins week by week",
+        "Direct Support — questions answered, no guesswork",
+      ],
+      valueLabel: "Value",
+      valueWas: "$97",
+      valueNow: "FREE today",
+      cta: "Claim my patch + free app",
+      note: "Instant access delivered by email after your order is confirmed.",
+    },
+    footerDisclaimer:
+      "Statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Results vary.",
+    finalTrust: ["Free U.S. Shipping", "30-Day Guarantee", "Secure Checkout"],
+  },
+  PT: {
+    promo: "OFERTA OFICIAL POR TEMPO LIMITADO • ESTOQUE LIMITADO • FRETE GRÁTIS EUA",
+    chip: "Berberina • Tecnologia Transdérmica",
+    h1a: "Torne-se a mulher ",
+    h1b: "que ele não consegue",
+    h1c: " parar de olhar.",
+    sub: (
+      <>
+        Milhares de mulheres acima dos 40 trocaram pílulas agressivas e dietas impossíveis pelo{" "}
+        <strong>Berberine Patch</strong> — um adesivo discreto que funciona 24/7 com tecnologia
+        transdérmica.{" "}
+        <span className="text-primary font-semibold">
+          Veja por que virou fenômeno nos EUA.
+        </span>
+      </>
+    ),
+    ctaPrimary: "Visitar o site oficial",
+    ctaSecondary: "Quero ser essa mulher",
+    rating: "4.9/5 • milhares de mulheres felizes",
+    trust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro", "Fórmula Clinicamente Estudada"],
+    eyebrow1: "Um momento que toda mulher conhece",
+    h2a: "Imagine-se, vestida para impressionar, em um jantar especial com seu marido.",
+    story: [
+      "É a noite perfeita.",
+      "Até que uma mulher deslumbrante passe em frente à sua mesa.",
+      "E ele não consegue tirar os olhos dela.",
+      "Dói, não é?",
+    ],
+    storyClose:
+      "Agora imagine você usando o adesivo de berberina. Experimente por 30 dias. Se você não ficar impressionada com o que vê no espelho, reembolsamos 100% do seu dinheiro. O risco é todo nosso.",
+    eyebrow2: "Antes e depois reais",
+    h2b: "O que 30 dias com o adesivo podem fazer",
+    h2bSub:
+      "Mulheres reais, transformações reais. Cada uma usou o Berberine Patch todos os dias — sem dietas malucas, sem treinos punitivos.",
+    eyebrow3: "A solução cabe em um único adesivo",
+    h2c: "Conheça o Berberine Patch.",
+    h2cSub:
+      "Um adesivo discreto que libera berberina pura através da pele — o composto natural que pesquisadores compararam à Metformina em estudos clínicos. Sem pílulas. Sem náusea. Sem esforço.",
+    bullets: [
+      "Açúcar no sangue estável o dia todo.",
+      "Menos vontade de doces e menos petiscadas à noite.",
+      "Gordura da barriga derretendo semana após semana.",
+      "Energia estável — sem o cansaço da tarde.",
+      "Suas roupas favoritas vestindo novamente — sem dietas malucas.",
+    ],
+    ctaOffer: "Ver a oferta no site oficial",
+    eyebrow4: "Conheça o produto",
+    h2d: "Por dentro do Berberine Patch",
+    h2dSub:
+      "Cada detalhe do adesivo que mulheres em todo lugar estão adorando para emagrecer — sem agulhas.",
+    eyebrow5: "Mulheres reais, resultados reais",
+    eyebrow6: "Disponível apenas no site oficial",
+    h2e: "Receba seu Berberine Patch direto do fabricante",
+    h2eSub:
+      "Para protegê-la de falsificações e garantir o preço promocional, o Berberine Patch é vendido apenas na página oficial do fabricante. É lá que estão os kits com desconto, o checkout seguro e a garantia de 30 dias.",
+    whatNext: "O que você verá na próxima página:",
+    nextItems: [
+      "Kits oficiais com até 60% off",
+      "Frete grátis e bônus exclusivos",
+      "Garantia incondicional de 30 dias",
+      "Checkout 100% seguro via ClickBank",
+    ],
+    ctaGo: "Ir para o site oficial",
+    redirectNote: "Você será redirecionada para a página oficial do fabricante",
+    h2f: "Garantia de 30 Dias com Reembolso Total",
+    guaranteeText:
+      "Experimente o Berberine Patch por 30 dias completos através do site oficial. Se você não ficar genuinamente impressionada com a mudança no seu corpo, energia e confiança, o fabricante reembolsa 100% do seu dinheiro. Sem perguntas. O risco é todo nosso.",
+    finalH: "Sua nova versão começa hoje.",
+    finalSub:
+      "Cada dia que você espera é mais um dia de energia perdida, confiança perdida e tempo perdido com as pessoas que você ama. O próximo passo está a um clique de distância — na página oficial do fabricante.",
+    finalCta: "Garantir meu Berberine Patch",
+    beforeAfter: [
+      { name: "Sarah, 47", line: "Perdeu 6,5 kg e recuperou a autoconfiança." },
+      { name: "Maria, 51", line: "Barriga chapada pela primeira vez em 10 anos." },
+      { name: "Camila, 44", line: "De biquíni novamente depois de dois filhos." },
+      { name: "Renata, 39", line: "Baixou 3 números de roupa em 30 dias." },
+      { name: "Linda, 49", line: "Os shorts antigos agora escorregam direto." },
+    ],
+    comparison: {
+      eyebrow: "A escolha inteligente",
+      title: "Berberine Patch vs ",
+      titleAccent: "Ozempic & Mounjaro",
+      subtitle:
+        "Mesmo objetivo — um corpo mais magro e açúcar no sangue estável. Caminhos muito diferentes. Veja por que milhares de mulheres estão trocando pelo adesivo natural.",
+      patch: {
+        title: "Berberine Patch",
+        subtitle: "100% natural • transdérmico",
+        badge: "RECOMENDADO",
+        items: [
+          "Sem agulhas, sem injeções",
+          "100% natural — Berberina + botanicals",
+          "Sem náusea ou efeitos colaterais fortes",
+          "Sem receita médica",
+          "A partir de $1.65 por dia",
+          "Adesivo discreto diário — funciona 24/7",
+          "Garantia de reembolso de 30 dias",
+        ],
+        cta: "Escolher o adesivo",
+      },
+      ozempic: {
+        title: "Ozempic",
+        subtitle: "Semaglutida • injeção",
+        items: [
+          "Autoinjeção semanal",
+          "Hormônio GLP-1 sintético",
+          "Náusea frequente, vômito, fadiga",
+          "Receita médica necessária",
+          "$900–$1.300 por mês",
+          "Peso volta quando para",
+          "Sem garantia de reembolso",
+        ],
+      },
+      mounjaro: {
+        title: "Mounjaro",
+        subtitle: "Tirzepatida • injeção",
+        items: [
+          "Autoinjeção semanal",
+          "Hormônio sintético duplo",
+          "Náusea, diarreia, avisos ao pâncreas",
+          "Receita médica necessária",
+          "$1.000–$1.500 por mês",
+          "Ganho de peso de volta relatado",
+          "Sem garantia de reembolso",
+        ],
+      },
+      disclaimer:
+        "Berberine Patch é um suplemento alimentar natural, não um medicamento. A comparação é apenas informativa e não constitui orientação médica.",
+    },
+    gallery: {
+      items: [
+        {
+          title: "Berberine Patch Original",
+          text: "Programa de 30 dias — 30 adesivos transdérmicos com nossa mistura exclusiva de berberina. O Ozempic da natureza trabalhando 24/7.",
+        },
+        {
+          title: "Resultados Reais e Visíveis",
+          text: "Mulheres reais relatam barriga mais chapada, menos desejos e mais energia em semanas. Sem dietas extremas. Sem agulhas.",
+        },
+        {
+          title: "Design que Se Adere à Pele",
+          text: "Adesivo seguro que dificilmente solta — use enquanto trabalha, dorme ou descansa em casa.",
+        },
+        {
+          title: "Discreto e Invisível",
+          text: "Fino, discreto e se mistura perfeitamente sob qualquer roupa. Fórmula suave adequada para a maioria dos tipos de pele.",
+        },
+        {
+          title: "Caixa com 30 Adesivos",
+          text: "30 adesivos por embalagem — programa completo de 30 dias com 7cm de diâmetro, pronto para iniciar sua transformação hoje.",
+        },
+      ],
+      cta: "Quero o meu agora",
+    },
+    testimonials: {
+      titleStart: "Mulheres estão ",
+      titleAccent: "falando",
+      titleEnd: ".",
+      items: [
+        {
+          q: "Em poucas semanas minha glicemia em jejum caiu tanto que meu médico literalmente perguntou o que eu estava fazendo de diferente. Eu me sinto EU de novo.",
+          a: "Sarah M., 47",
+        },
+        {
+          q: "Eu vivia cansada, com aquela barriga teimosa que não ia embora. Depois de um mês com o adesivo, minhas roupas começaram a servir de novo. Sem dieta maluca.",
+          a: "Linda K., 52",
+        },
+        {
+          q: "Aqueles desejos por doce no final da tarde? Foram embora. Parece pouco, mas mudou minha rotina inteira — e meu corpo.",
+          a: "Jessica T., 44",
+        },
+      ],
+    },
+    bonus: {
+      eyebrow: "Bônus Grátis · Por Tempo Limitado",
+      titleStart: "Ganhe o ",
+      titleAccent1: "Purisaki Life",
+      titleMid: " — seu app companheiro de 30 dias, ",
+      titleAccent2: "GRÁTIS",
+      titleEnd: " em todo pedido.",
+      subtitle:
+        "Um programa privado de 30 dias construído em torno do Berberine Patch — guias diários, plano de refeições, receitas, dicas de mentalidade e acompanhamento de progresso. Seu sem custo extra ao comprar hoje.",
+      insideTitle: "O que tem dentro do app:",
+      items: [
+        "Guia do Usuário passo a passo — aplique seu adesivo da forma certa, sempre",
+        "Plano Alimentar de 30 Dias — café da manhã, almoço, jantar e lanches para apoiar a queima de gordura",
+        "Receitas Saudáveis — rápidas, simples, para toda a família",
+        "Dicas Diárias de Mentalidade — mantenha consistência e motivação",
+        "Acompanhamento de Progresso — veja suas conquistas semana a semana",
+        "Suporte Direto — tire dúvidas, sem adivinhações",
+      ],
+      valueLabel: "Valor",
+      valueWas: "$97",
+      valueNow: "GRÁTIS hoje",
+      cta: "Garantir meu adesivo + app grátis",
+      note: "Acesso instantâneo enviado por email após a confirmação do pedido.",
+    },
+    footerDisclaimer:
+      "As alegações não foram avaliadas pela FDA. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Resultados podem variar.",
+    finalTrust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro"],
   },
 };
 
 function LandingPage() {
-  const [lang, setLang] = useState<Lang>("EN");
-  const t = copy.EN; // PT shown via toggle UI only for parity with source
-  void lang;
+  const [lang, setLang] = useState<Lang>("PT");
+  const t = copy[lang];
+
 
   return (
     <div className="min-h-screen text-foreground">
@@ -311,11 +639,11 @@ function LandingPage() {
             >
               <CarouselContent>
                 {[
-                  { img: ba1.url, name: "Sarah, 47", line: "Lost 14 lbs and got her confidence back." },
-                  { img: ba2.url, name: "Maria, 51", line: "Flat belly for the first time in 10 years." },
-                  { img: ba3.url, name: "Camila, 44", line: "Back in a bikini after two kids." },
-                  { img: ba4.url, name: "Renata, 39", line: "Dropped 3 dress sizes in 30 days." },
-                  { img: ba5.url, name: "Linda, 49", line: "Her old shorts now slide right off." },
+                  { img: ba1.url, ...t.beforeAfter[0] },
+                  { img: ba2.url, ...t.beforeAfter[1] },
+                  { img: ba3.url, ...t.beforeAfter[2] },
+                  { img: ba4.url, ...t.beforeAfter[3] },
+                  { img: ba5.url, ...t.beforeAfter[4] },
                 ].map((c) => (
                   <CarouselItem key={c.name} className="md:basis-1/2 lg:basis-1/2">
                     <a
@@ -390,12 +718,12 @@ function LandingPage() {
       <section className="px-4 py-20 md:py-28 bg-black/30 border-y border-white/5">
         <div className="max-w-6xl mx-auto">
           <div className="text-center max-w-3xl mx-auto">
-            <span className="eyebrow">The smart choice</span>
+            <span className="eyebrow">{t.comparison.eyebrow}</span>
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-              Berberine Patch vs <span className="text-primary glow-text">Ozempic & Mounjaro</span>
+              {t.comparison.title}<span className="text-primary glow-text">{t.comparison.titleAccent}</span>
             </h2>
             <p className="mt-4 text-muted-foreground">
-              Same goal — a slimmer body and steady blood sugar. Very different paths. See why thousands of women are switching to the natural patch.
+              {t.comparison.subtitle}
             </p>
           </div>
 
@@ -403,20 +731,12 @@ function LandingPage() {
             {/* Berberine Patch */}
             <div className="rounded-2xl border-2 border-primary/60 bg-card p-6 shadow-[0_20px_80px_-30px_rgba(74,141,255,0.6)] relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-black tracking-widest px-3 py-1 rounded-full">
-                RECOMMENDED
+                {t.comparison.patch.badge}
               </span>
-              <h3 className="text-xl font-black text-primary">Berberine Patch</h3>
-              <p className="text-xs text-muted-foreground mt-1">100% natural • transdermal</p>
+              <h3 className="text-xl font-black text-primary">{t.comparison.patch.title}</h3>
+              <p className="text-xs text-muted-foreground mt-1">{t.comparison.patch.subtitle}</p>
               <ul className="mt-5 space-y-3 text-sm">
-                {[
-                  "No needles, no injections",
-                  "100% natural — Berberine + botanicals",
-                  "No nausea or harsh side effects",
-                  "No prescription needed",
-                  "From $1.65 per day",
-                  "Discreet daily patch — works 24/7",
-                  "30-day money-back guarantee",
-                ].map((item) => (
+                {t.comparison.patch.items.map((item) => (
                   <li key={item} className="flex gap-2 items-start">
                     <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
                     <span>{item}</span>
@@ -429,24 +749,16 @@ function LandingPage() {
                 rel="noopener noreferrer sponsored"
                 className="btn-cta inline-flex items-center justify-center gap-2 w-full px-5 py-3 mt-6 text-sm"
               >
-                Choose the patch <ArrowRight className="w-4 h-4" />
+                {t.comparison.patch.cta} <ArrowRight className="w-4 h-4" />
               </a>
             </div>
 
             {/* Ozempic */}
             <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
-              <h3 className="text-xl font-black text-muted-foreground">Ozempic</h3>
-              <p className="text-xs text-muted-foreground mt-1">Semaglutide • injection</p>
+              <h3 className="text-xl font-black text-muted-foreground">{t.comparison.ozempic.title}</h3>
+              <p className="text-xs text-muted-foreground mt-1">{t.comparison.ozempic.subtitle}</p>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
-                {[
-                  "Weekly self-injection",
-                  "Synthetic GLP-1 hormone",
-                  "Frequent nausea, vomiting, fatigue",
-                  "Prescription required",
-                  "$900–$1,300 per month",
-                  "Weight often returns when you stop",
-                  "No money-back guarantee",
-                ].map((item) => (
+                {t.comparison.ozempic.items.map((item) => (
                   <li key={item} className="flex gap-2 items-start">
                     <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
                     <span>{item}</span>
@@ -457,18 +769,10 @@ function LandingPage() {
 
             {/* Mounjaro */}
             <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
-              <h3 className="text-xl font-black text-muted-foreground">Mounjaro</h3>
-              <p className="text-xs text-muted-foreground mt-1">Tirzepatide • injection</p>
+              <h3 className="text-xl font-black text-muted-foreground">{t.comparison.mounjaro.title}</h3>
+              <p className="text-xs text-muted-foreground mt-1">{t.comparison.mounjaro.subtitle}</p>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
-                {[
-                  "Weekly self-injection",
-                  "Dual synthetic hormone",
-                  "Nausea, diarrhea, pancreas warnings",
-                  "Prescription required",
-                  "$1,000–$1,500 per month",
-                  "Rebound weight gain reported",
-                  "No money-back guarantee",
-                ].map((item) => (
+                {t.comparison.mounjaro.items.map((item) => (
                   <li key={item} className="flex gap-2 items-start">
                     <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
                     <span>{item}</span>
@@ -479,7 +783,7 @@ function LandingPage() {
           </div>
 
           <p className="text-center text-xs text-muted-foreground mt-8 max-w-2xl mx-auto">
-            Berberine Patch is a natural dietary supplement, not a medication. Comparison is for informational purposes only and is not medical advice.
+            {t.comparison.disclaimer}
           </p>
         </div>
       </section>
@@ -500,31 +804,11 @@ function LandingPage() {
           >
             <CarouselContent className="-ml-4">
               {[
-                {
-                  img: pouchAsset.url,
-                  title: "Berberine Patch Original",
-                  text: "30-day program — 30 transdermal patches with our proprietary berberine blend. Nature's Ozempic working 24/7.",
-                },
-                {
-                  img: resultsAsset.url,
-                  title: "Real, Visible Results",
-                  text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
-                },
-                {
-                  img: designAsset.url,
-                  title: "Skin-Fitting Design",
-                  text: "Secure adhesive that's unlikely to fall off — wear it while you work, sleep or rest at home.",
-                },
-                {
-                  img: discreetAsset.url,
-                  title: "Discreet & Invisible",
-                  text: "Thin, inconspicuous and blends seamlessly under any outfit. Gentle formula suitable for most skin types.",
-                },
-                {
-                  img: boxAsset.url,
-                  title: "30-Patch Box",
-                  text: "30 patches per pack — a full 30-day program at 7cm diameter, ready to start your transformation today.",
-                },
+                { img: pouchAsset.url, ...t.gallery.items[0] },
+                { img: resultsAsset.url, ...t.gallery.items[1] },
+                { img: designAsset.url, ...t.gallery.items[2] },
+                { img: discreetAsset.url, ...t.gallery.items[3] },
+                { img: boxAsset.url, ...t.gallery.items[4] },
               ].map((card) => (
                 <CarouselItem
                   key={card.title}
@@ -550,7 +834,7 @@ function LandingPage() {
                         rel="noopener noreferrer sponsored"
                         className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
                       >
-                        I want mine now <ArrowRight className="w-3.5 h-3.5" />
+                        {t.gallery.cta} <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                     </div>
                   </div>
@@ -572,24 +856,11 @@ function LandingPage() {
         <div className="max-w-5xl mx-auto text-center">
           <span className="eyebrow">{t.eyebrow5}</span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-            Women are <span className="text-primary">talking</span>.
+            {t.testimonials.titleStart}<span className="text-primary">{t.testimonials.titleAccent}</span>{t.testimonials.titleEnd}
           </h2>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            {[
-              {
-                q: "Within a few weeks my fasting glucose dropped so much my doctor literally asked what I was doing differently. I feel like ME again.",
-                a: "Sarah M., 47",
-              },
-              {
-                q: "I lived tired, with that stubborn belly that wouldn't go away. After one month with the patch, my clothes started fitting again. No crazy diet.",
-                a: "Linda K., 52",
-              },
-              {
-                q: "The late-afternoon sugar cravings? Gone. Sounds small but it changed my entire routine — and my body.",
-                a: "Jessica T., 44",
-              },
-            ].map((t2) => (
+            {t.testimonials.items.map((t2) => (
               <figure
                 key={t2.a}
                 className="rounded-2xl border border-border/40 bg-card p-6 flex flex-col"
@@ -643,14 +914,13 @@ function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <span className="eyebrow inline-flex items-center gap-2">
-              <Flame className="w-3.5 h-3.5" /> Free Bonus · Limited Time
+              <Flame className="w-3.5 h-3.5" /> {t.bonus.eyebrow}
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-              Get <span className="text-primary">Purisaki Life</span> — your 30-day companion app, <span className="text-primary">FREE</span> with every order.
+              {t.bonus.titleStart}<span className="text-primary">{t.bonus.titleAccent1}</span>{t.bonus.titleMid}<span className="text-primary">{t.bonus.titleAccent2}</span>{t.bonus.titleEnd}
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-              A private 30-day program built around the Berberine Patch — daily guides, meal plans,
-              recipes, mindset tips and progress tracking. Yours at no extra cost when you order today.
+              {t.bonus.subtitle}
             </p>
           </div>
 
@@ -672,16 +942,9 @@ function LandingPage() {
             </div>
 
             <div>
-              <h3 className="text-xl sm:text-2xl font-black">What's inside the app:</h3>
+              <h3 className="text-xl sm:text-2xl font-black">{t.bonus.insideTitle}</h3>
               <ul className="mt-5 space-y-3">
-                {[
-                  "Step-by-step User Guide — apply your patch the right way, every time",
-                  "30-Day Meal Plan — breakfast, lunch, dinner & snacks designed to support fat-burn",
-                  "Healthy Recipes — quick, simple, family-friendly",
-                  "Daily Mindset Tips — stay consistent and motivated",
-                  "Progress Tracker — see your wins week by week",
-                  "Direct Support — questions answered, no guesswork",
-                ].map((item) => (
+                {t.bonus.items.map((item) => (
                   <li key={item} className="flex gap-3 items-start">
                     <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                     <span className="text-foreground/90">{item}</span>
@@ -692,10 +955,10 @@ function LandingPage() {
               <div className="mt-6 inline-flex items-center gap-3 rounded-xl border border-primary/40 bg-primary/10 px-4 py-3">
                 <span className="text-2xl">🎁</span>
                 <div className="text-left">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Value</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">{t.bonus.valueLabel}</div>
                   <div className="font-black">
-                    <span className="line-through text-muted-foreground mr-2">$97</span>
-                    <span className="text-primary">FREE today</span>
+                    <span className="line-through text-muted-foreground mr-2">{t.bonus.valueWas}</span>
+                    <span className="text-primary">{t.bonus.valueNow}</span>
                   </div>
                 </div>
               </div>
@@ -706,10 +969,10 @@ function LandingPage() {
                 rel="noopener noreferrer sponsored"
                 className="btn-cta inline-flex items-center gap-2 px-8 py-4 mt-6 text-sm"
               >
-                Claim my patch + free app <ArrowRight className="w-4 h-4" />
+                {t.bonus.cta} <ArrowRight className="w-4 h-4" />
               </a>
               <p className="text-xs text-muted-foreground mt-3">
-                Instant access delivered by email after your order is confirmed.
+                {t.bonus.note}
               </p>
             </div>
           </div>
@@ -722,8 +985,9 @@ function LandingPage() {
           <div className="mx-auto w-40 h-40 rounded-full grid place-items-center border-4 border-primary/60 bg-primary/10 text-center">
             <div>
               <div className="text-4xl font-black text-primary">30</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">Day Money</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">Back</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dias" : "Day"}</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dinheiro" : "Money"}</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "De Volta" : "Back"}</div>
             </div>
           </div>
           <div>
@@ -749,9 +1013,9 @@ function LandingPage() {
             {t.finalCta} <ArrowRight className="w-4 h-4" />
           </a>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1.5"><Truck className="w-3.5 h-3.5 text-primary"/> Free U.S. Shipping</span>
-            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-primary"/> 30-Day Guarantee</span>
-            <span className="inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-primary"/> Secure Checkout</span>
+            <span className="inline-flex items-center gap-1.5"><Truck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[0]}</span>
+            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[1]}</span>
+            <span className="inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[2]}</span>
           </div>
         </div>
       </section>
@@ -759,8 +1023,7 @@ function LandingPage() {
       <footer className="border-t border-white/5 py-8 text-center text-xs text-muted-foreground px-4">
         <p>© {new Date().getFullYear()} Berberine Patch. All rights reserved.</p>
         <p className="mt-2 max-w-3xl mx-auto">
-          Statements have not been evaluated by the FDA. This product is not intended to diagnose,
-          treat, cure or prevent any disease. Results vary.
+          {t.footerDisclaimer}
         </p>
       </footer>
     </div>
