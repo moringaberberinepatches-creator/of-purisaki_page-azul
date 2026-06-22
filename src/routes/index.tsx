@@ -638,13 +638,7 @@ function LandingPage() {
               className="relative"
             >
               <CarouselContent>
-                {[
-                  { img: ba1.url, name: "Sarah, 47", line: "Lost 14 lbs and got her confidence back." },
-                  { img: ba2.url, name: "Maria, 51", line: "Flat belly for the first time in 10 years." },
-                  { img: ba3.url, name: "Camila, 44", line: "Back in a bikini after two kids." },
-                  { img: ba4.url, name: "Renata, 39", line: "Dropped 3 dress sizes in 30 days." },
-                  { img: ba5.url, name: "Linda, 49", line: "Her old shorts now slide right off." },
-                ].map((c) => (
+                {t.beforeAfter.map((c) => (
                   <CarouselItem key={c.name} className="md:basis-1/2 lg:basis-1/2">
                     <a
                       href={CTA_URL}
