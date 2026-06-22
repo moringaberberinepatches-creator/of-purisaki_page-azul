@@ -34,9 +34,6 @@ import designAsset from "@/assets/product-design.webp.asset.json";
 import discreetAsset from "@/assets/product-discreet.webp.asset.json";
 import app1 from "@/assets/purisaki-app-1.png.asset.json";
 import app2 from "@/assets/purisaki-app-2.png.asset.json";
-import app3 from "@/assets/purisaki-app-3.png.asset.json";
-import app4 from "@/assets/purisaki-app-4.png.asset.json";
-import app5 from "@/assets/purisaki-app-5.png.asset.json";
 
 
 
@@ -658,8 +655,8 @@ function LandingPage() {
           </div>
 
           <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
-            <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-3 gap-3">
-              {[app1, app2, app3, app4, app5].map((img, i) => (
+            <div className="grid grid-cols-2 gap-4">
+              {[app1, app2].map((img, i) => (
                 <div
                   key={i}
                   className="rounded-2xl overflow-hidden border border-primary/30 bg-card shadow-[0_20px_60px_-25px_rgba(74,141,255,0.5)]"
