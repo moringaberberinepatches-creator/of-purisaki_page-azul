@@ -1008,8 +1008,7 @@ function LandingPage() {
       <footer className="border-t border-white/5 py-8 text-center text-xs text-muted-foreground px-4">
         <p>© {new Date().getFullYear()} Berberine Patch. All rights reserved.</p>
         <p className="mt-2 max-w-3xl mx-auto">
-          Statements have not been evaluated by the FDA. This product is not intended to diagnose,
-          treat, cure or prevent any disease. Results vary.
+          {t.footerDisclaimer}
         </p>
       </footer>
     </div>
