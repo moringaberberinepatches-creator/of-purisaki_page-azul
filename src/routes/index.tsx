@@ -20,6 +20,7 @@ import {
   Check,
   Flame,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 import heroAsset from "@/assets/hero-overlooked.png.asset.json";
 import ba1 from "@/assets/before-after-1.png.asset.json";
@@ -609,20 +610,45 @@ function LandingPage() {
       </section>
 
       {/* STORY */}
-      <section className="px-4 py-20 md:py-28">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight text-primary glow-text">
+      <section className="relative px-4 py-24 md:py-32 overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none">
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-[radial-gradient(ellipse_at_center,oklch(0.55_0.24_258/0.22),transparent_65%)]" />
+        </div>
+        <div className="relative max-w-3xl mx-auto text-center">
+          <span className="inline-flex items-center gap-2 rounded-full border border-primary/40 bg-primary/10 px-4 py-1.5 text-[11px] font-black tracking-[0.2em] uppercase text-primary">
+            {lang === "PT" ? "Atenção" : "Attention"}
+          </span>
+          <h2 className="mt-6 text-3xl sm:text-4xl md:text-5xl font-black leading-[1.1] text-primary glow-text">
             {t.eyebrow1}
           </h2>
-          <p className="mt-4 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+          <p className="mt-5 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
             {t.h2a}
           </p>
-          <div className="mt-10 space-y-4 text-lg text-muted-foreground">
-            {t.story.map((line) => (
-              <p key={line}>{line}</p>
-            ))}
+
+          <div className="mt-12 rounded-3xl border border-primary/20 bg-card/60 backdrop-blur-sm p-8 sm:p-10 text-left shadow-[0_24px_80px_-32px_oklch(0.55_0.24_258/0.35)]">
+            <div className="space-y-6">
+              {t.story.map((line, idx) => (
+                <p
+                  key={line}
+                  className={cn(
+                    "text-lg sm:text-xl leading-relaxed",
+                    idx === t.story.length - 1
+                      ? "text-foreground font-semibold"
+                      : "text-muted-foreground"
+                  )}
+                >
+                  {line}
+                </p>
+              ))}
+            </div>
           </div>
-          <p className="mt-10 text-base text-foreground/90 leading-relaxed">{t.storyClose}</p>
+
+          <div className="mt-8 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 to-primary/5 p-8 sm:p-10 text-center shadow-lg">
+            <p className="text-lg sm:text-xl text-foreground leading-relaxed font-medium">
+              {t.storyClose}
+            </p>
+          </div>
+
           <a
             href={CTA_URL}
             target="_blank"
@@ -631,6 +657,9 @@ function LandingPage() {
           >
             {t.ctaSecondary} <ArrowRight className="w-4 h-4" />
           </a>
+          <p className="mt-4 text-xs text-muted-foreground tracking-wide">
+            {t.redirectNote}
+          </p>
         </div>
       </section>
 
