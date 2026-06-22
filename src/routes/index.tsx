@@ -141,6 +141,13 @@ const copy = {
     finalSub:
       "Every day you wait is another day of lost energy, lost confidence and lost time with the people you love. The next step is one click away — on the official manufacturer page.",
     finalCta: "Claim my Berberine Patch",
+    beforeAfter: [
+      { name: "Sarah, 47", line: "Lost 14 lbs and got her confidence back." },
+      { name: "Maria, 51", line: "Flat belly for the first time in 10 years." },
+      { name: "Camila, 44", line: "Back in a bikini after two kids." },
+      { name: "Renata, 39", line: "Dropped 3 dress sizes in 30 days." },
+      { name: "Linda, 49", line: "Her old shorts now slide right off." },
+    ],
     comparison: {
       eyebrow: "The smart choice",
       title: "Berberine Patch vs ",
