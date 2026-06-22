@@ -662,8 +662,6 @@ function LandingPage() {
           </p>
         </div>
       </section>
-        </div>
-      </section>
 
       {/* BEFORE & AFTER */}
       <section className="px-4 py-20 bg-black/30 border-y border-white/5">
