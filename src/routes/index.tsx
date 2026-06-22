@@ -21,7 +21,7 @@ import {
   Flame,
 } from "lucide-react";
 
-import heroAsset from "@/assets/hero.png.asset.json";
+import heroAsset from "@/assets/hero-overlooked.png.asset.json";
 import sarahAsset from "@/assets/sarah.jpg.asset.json";
 import lindaAsset from "@/assets/linda.jpg.asset.json";
 import jessicaAsset from "@/assets/jessica.jpg.asset.json";
@@ -223,15 +223,20 @@ function LandingPage() {
 
           <div className="relative">
             <div className="absolute inset-0 -m-6 rounded-[2rem] bg-primary/20 blur-3xl" />
-            <div className="relative rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)]">
+            <a
+              href={CTA_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              aria-label="Tired of being overlooked? Get the Berberine Patch"
+              className="relative block rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)] transition-transform hover:scale-[1.01]"
+            >
               <img
                 src={heroAsset.url}
                 alt="Tired of being overlooked? Berberine Patch"
                 loading="eager"
                 className="w-full h-auto rounded-2xl"
               />
-
-            </div>
+            </a>
           </div>
         </div>
 
