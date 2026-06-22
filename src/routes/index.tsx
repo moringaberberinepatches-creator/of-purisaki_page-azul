@@ -53,7 +53,7 @@ export const Route = createFileRoute("/")({
       {
         property: "og:description",
         content:
-          "Thousands of women over 40 traded harsh pills for the Berberine Patch — 24/7 transdermal technology.",
+          "Thousands of women over 40 swapped harsh pills for the Berberine Patch — 24/7 transdermal technology.",
       },
       { property: "og:type", content: "product" },
       { property: "og:url", content: "/" },
@@ -69,49 +69,49 @@ type Lang = "EN" | "PT";
 
 const copy = {
   EN: {
-    promo: "OFFICIAL LIMITED-TIME OFFER • LOW STOCK • FREE U.S. SHIPPING",
+    promo: "OFFICIAL LIMITED-TIME OFFER • LIMITED STOCK • FREE U.S. SHIPPING",
     chip: "Berberine • Transdermal Technology",
     h1a: "Become the woman ",
     h1b: "he can't stop",
-    h1c: " looking at.",
+    h1c: " staring at.",
     sub: (
       <>
-        Thousands of women over 40 traded harsh pills and impossible diets for the{" "}
-        <strong>Berberine Patch</strong> — a discreet adhesive that works 24/7 through transdermal
+        Thousands of women over 40 have swapped harsh pills and impossible diets for the{" "}
+        <strong>Berberine Patch</strong> — a discreet adhesive that works 24/7 with transdermal
         technology.{" "}
         <span className="text-primary font-semibold">
-          See why it became a phenomenon in the U.S.
+          See why it became a phenomenon across the U.S.
         </span>
       </>
     ),
-    ctaPrimary: "Visit official site",
+    ctaPrimary: "Visit the official site",
     ctaSecondary: "I want to be that woman",
     rating: "4.9/5 • thousands of happy women",
-    trust: ["Free U.S. Shipping", "30-Day Guarantee", "Secure Checkout", "Studied Formula"],
+    trust: ["Free U.S. Shipping", "30-Day Guarantee", "Secure Checkout", "Clinically-Studied Formula"],
     eyebrow1: "A moment every woman knows",
-    h2a: "Imagine yourself, all dressed up, at a special restaurant with your husband.",
+    h2a: "Picture yourself, dressed to impress, at a special dinner with your husband.",
     story: [
-      "The perfect night.",
+      "It's the perfect night.",
       "Until a stunning woman walks past your table.",
-      "And he can't stop looking.",
+      "And he can't take his eyes off her.",
       "It hurts, doesn't it?",
     ],
     storyClose:
-      "Now imagine that woman is you — with Berberine Patch. Try it for 30 full days. If you're not surprised by what you see in the mirror, we refund 100% of your money. The risk is entirely on us.",
+      "Now picture that woman being you — wearing the Berberine Patch. Try it for a full 30 days. If you're not stunned by what you see in the mirror, we refund 100% of your money. The risk is entirely on us.",
     eyebrow2: "Real before & after",
     h2b: "What 30 days with the patch can do",
     h2bSub:
-      "Real women, real transformations. Each one wore the Berberine Patch daily — no diet shocks, no gym torture.",
+      "Real women, real transformations. Each one wore the Berberine Patch every day — no crash diets, no punishing workouts.",
     eyebrow3: "The solution fits in a single patch",
     h2c: "Meet the Berberine Patch.",
     h2cSub:
-      "A discreet adhesive that delivers pure Berberine straight through your skin — the natural compound scientists have compared to Metformin in clinical studies. No pills. No nausea. No effort.",
+      "A discreet adhesive that delivers pure Berberine straight through your skin — the natural compound researchers have compared to Metformin in clinical studies. No pills. No nausea. No effort.",
     bullets: [
-      "Stable blood sugar throughout the day.",
-      "Fewer sweet cravings and late-night snacking.",
+      "Stable blood sugar all day long.",
+      "Fewer sweet cravings and less late-night snacking.",
       "Belly fat melting away week after week.",
-      "Steady energy — no afternoon crash.",
-      "Your favorite clothes fitting again — without torture diets.",
+      "Steady energy — without the afternoon crash.",
+      "Your favorite clothes fitting again — with no crash diets.",
     ],
     ctaOffer: "See the offer on the official site",
     eyebrow4: "Meet the product",
@@ -120,24 +120,24 @@ const copy = {
       "Every detail of the patch women everywhere are obsessing over to lose weight — without needles.",
     eyebrow5: "Real women, real results",
     eyebrow6: "Available only on the official site",
-    h2e: "Get your Berberine Patch direct from the maker",
+    h2e: "Get your Berberine Patch directly from the maker",
     h2eSub:
-      "To protect you from counterfeits and guarantee the promo pricing, Berberine Patch is sold only on the official manufacturer page. That's where the discounted kits, secure checkout and 30-day guarantee live.",
+      "To protect you from counterfeits and lock in the promo price, the Berberine Patch is sold only on the official manufacturer page. That's where the discounted kits, secure checkout and 30-day guarantee live.",
     whatNext: "What you'll see on the next page:",
     nextItems: [
       "Official kits with up to 60% off",
       "Free shipping and exclusive bonuses",
       "Unconditional 30-day money-back guarantee",
-      "100% secure checkout (ClickBank)",
+      "100% secure checkout via ClickBank",
     ],
     ctaGo: "Go to the official site",
     redirectNote: "You'll be redirected to the official manufacturer page",
     h2f: "30-Day Money-Back Guarantee",
     guaranteeText:
-      "Try Berberine Patch for 30 full days through the official site. If you're not genuinely surprised by the change in your body, energy and confidence, the maker refunds 100% of your money. No questions asked. The risk is entirely on us.",
+      "Try the Berberine Patch for a full 30 days through the official site. If you're not genuinely amazed by the change in your body, energy and confidence, the maker refunds 100% of your money. No questions asked. The risk is entirely on us.",
     finalH: "Your new version starts today.",
     finalSub:
-      "Every day you wait is another day losing energy, confidence and time with the people you love. The next step is one click away — on the official manufacturer page.",
+      "Every day you wait is another day of lost energy, lost confidence and lost time with the people you love. The next step is one click away — on the official manufacturer page.",
     finalCta: "Claim my Berberine Patch",
   },
 };
@@ -150,7 +150,7 @@ function LandingPage() {
   return (
     <div className="min-h-screen text-foreground">
       {/* Promo bar */}
-      <div className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 text-white text-center text-xs sm:text-sm font-bold tracking-wide py-2.5 px-4">
+      <div className="bg-gradient-to-r from-primary via-accent to-primary text-primary-foreground text-center text-xs sm:text-sm font-bold tracking-wide py-2.5 px-4">
         <span className="inline-flex items-center gap-2">
           <Flame className="w-4 h-4" /> {t.promo}
         </span>
@@ -159,9 +159,13 @@ function LandingPage() {
       {/* Nav */}
       <header className="border-b border-white/5">
         <div className="max-w-6xl mx-auto flex items-center justify-between px-4 py-4">
-          <div className="font-black tracking-tight text-lg">
-            <span className="text-primary">B</span>erberine<span className="text-primary">Patch</span>
-          </div>
+          <a href="#top" className="brand-lockup" aria-label="Berberine Patch">
+            <span className="dot" aria-hidden="true" />
+            <span className="wordmark">
+              Berberine Patch
+              <span className="pcs">30 PCS</span>
+            </span>
+          </a>
           <div className="flex items-center gap-2 bg-secondary/60 border border-border/60 rounded-full px-2 py-1">
             <Globe className="w-3.5 h-3.5 text-muted-foreground ml-1" />
             <button
