@@ -32,6 +32,11 @@ import resultsAsset from "@/assets/product-results.webp.asset.json";
 import boxAsset from "@/assets/product-box.webp.asset.json";
 import designAsset from "@/assets/product-design.webp.asset.json";
 import discreetAsset from "@/assets/product-discreet.webp.asset.json";
+import app1 from "@/assets/purisaki-app-1.png.asset.json";
+import app2 from "@/assets/purisaki-app-2.png.asset.json";
+import app3 from "@/assets/purisaki-app-3.png.asset.json";
+import app4 from "@/assets/purisaki-app-4.png.asset.json";
+import app5 from "@/assets/purisaki-app-5.png.asset.json";
 
 
 
