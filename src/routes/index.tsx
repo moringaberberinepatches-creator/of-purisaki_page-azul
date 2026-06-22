@@ -305,8 +305,16 @@ const copy = {
       "E seu marido não consegue tirar os olhos dela.",
       "Dói, eu sei que dói, não é?",
     ],
-    storyClose:
-      "Agora imagine você usando o adesivo de berberina. Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma semana ou o seu dinheiro de volta. O risco é todo nosso. Experimente por 30 dias. Se você não ficar impressionada se olhando no espelho, reembolsamos 100% do seu dinheiro.",
+    storyClose: (
+      <>
+        Agora imagine você usando o <span className="text-primary glow-text">adesivo de berberina</span>.{" "}
+        Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma{" "}
+        <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
+        <span className="text-primary glow-text">O risco é todo nosso.</span> Experimente por{" "}
+        <span className="text-primary glow-text">30 dias</span>. Se você não ficar impressionada se olhando no espelho, reembolsamos{" "}
+        <span className="text-primary glow-text">100% do seu dinheiro</span>.
+      </>
+    ),
     eyebrow2: "Antes e depois reais",
     h2b: "O que 30 dias com o adesivo podem fazer",
     h2bSub:
