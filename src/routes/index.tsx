@@ -225,11 +225,12 @@ function LandingPage() {
             <div className="absolute inset-0 -m-6 rounded-[2rem] bg-primary/20 blur-3xl" />
             <div className="relative rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)]">
               <img
-                src={`${SRC}/assets/hero-en-B9Qdr0FW.png`}
+                src={heroAsset.url}
                 alt="Tired of being overlooked? Berberine Patch"
                 loading="eager"
                 className="w-full h-auto rounded-2xl"
               />
+
             </div>
           </div>
         </div>
@@ -292,21 +293,22 @@ function LandingPage() {
           <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {[
               {
-                img: `${SRC}/assets/before-after-sarah-OcgPX6OY.jpg`,
+                img: sarahAsset.url,
                 name: "Sarah, 47",
                 line: "Lost 14 lbs and got her confidence back.",
               },
               {
-                img: `${SRC}/assets/before-after-linda-Bu1lcWv5.jpg`,
+                img: lindaAsset.url,
                 name: "Linda, 52",
                 line: "Flat belly for the first time in 10 years.",
               },
               {
-                img: `${SRC}/assets/before-after-jessica-Db4m-i-f.jpg`,
+                img: jessicaAsset.url,
                 name: "Jessica, 44",
                 line: "More energy than her own daughter.",
               },
             ].map((c) => (
+
               <div
                 key={c.name}
                 className="rounded-2xl bg-card border border-border/40 overflow-hidden text-left hover:border-primary/60 transition-colors"
@@ -359,11 +361,12 @@ function LandingPage() {
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
             <img
-              src={`${SRC}/__l5e/assets-v1/de93f9d2-9d71-4a6c-b6bb-c367d30bdb14/produto-pouch.webp`}
+              src={pouchAsset.url}
               alt="Berberine Patch product"
               loading="lazy"
               className="relative w-full h-auto rounded-3xl border border-primary/30 bg-black/40 p-2"
             />
+
           </div>
         </div>
       </section>
@@ -385,34 +388,29 @@ function LandingPage() {
             <CarouselContent className="-ml-4">
               {[
                 {
-                  img: "de93f9d2-9d71-4a6c-b6bb-c367d30bdb14/produto-pouch.webp",
+                  img: pouchAsset.url,
                   title: "Berberine Patch Original",
-                  text: "30-day program — 30 transdermal patches with berberine, fucoxanthin, pomegranate & bioperine. Nature's Ozempic working 24/7.",
+                  text: "30-day program — 30 transdermal patches with our proprietary berberine blend. Nature's Ozempic working 24/7.",
                 },
                 {
-                  img: "6f03e772-7abc-4636-9f89-900ed4484925/produto-antes-depois.webp",
+                  img: resultsAsset.url,
                   title: "Real, Visible Results",
                   text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
                 },
                 {
-                  img: "1f8b92f3-7c84-4b51-9dd5-16c2ad155224/produto-ingredientes.webp",
-                  title: "Premium Natural Formula",
-                  text: "Botanical actives that gently fire up metabolism, support natural GLP-1 and refine your silhouette comfortably.",
+                  img: designAsset.url,
+                  title: "Skin-Fitting Design",
+                  text: "Secure adhesive that's unlikely to fall off — wear it while you work, sleep or rest at home.",
                 },
                 {
-                  img: "61540cbd-7d00-439b-a74b-562e957b7609/produto-design.webp",
-                  title: "Transdermal Technology",
-                  text: "Thin patch that sticks firmly and delivers actives through the skin — no stomach upset, no pills, no nausea.",
-                },
-                {
-                  img: "15b2ddfb-17e3-4b97-ae70-a1d4831e3c20/produto-discreto.webp",
+                  img: discreetAsset.url,
                   title: "Discreet & Invisible",
-                  text: "Thin, odorless, invisible under any outfit. Wear it at work, at the gym, while you sleep. Stick it and forget it.",
+                  text: "Thin, inconspicuous and blends seamlessly under any outfit. Gentle formula suitable for most skin types.",
                 },
                 {
-                  img: "b6a6f682-7994-4eeb-9d7b-98422d20fafe/produto-medidas.webp",
+                  img: boxAsset.url,
                   title: "30-Patch Box",
-                  text: "30 patches per box = a full 30-day program. 7cm diameter, ready to start your transformation today.",
+                  text: "30 patches per pack — a full 30-day program at 7cm diameter, ready to start your transformation today.",
                 },
               ].map((card) => (
                 <CarouselItem
@@ -420,12 +418,12 @@ function LandingPage() {
                   className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
                 >
                   <div className="h-full rounded-2xl bg-card border border-border/40 overflow-hidden hover:border-primary/60 transition-colors flex flex-col">
-                    <div className="aspect-square bg-black/40">
+                    <div className="aspect-square bg-white">
                       <img
-                        src={`${SRC}/__l5e/assets-v1/${card.img}`}
+                        src={card.img}
                         alt={card.title}
                         loading="lazy"
-                        className="w-full h-full object-cover"
+                        className="w-full h-full object-contain"
                       />
                     </div>
                     <div className="p-5 flex-1 flex flex-col">
@@ -451,6 +449,7 @@ function LandingPage() {
               <CarouselNext className="static translate-y-0 bg-primary/15 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground" />
             </div>
           </Carousel>
+
 
         </div>
       </section>
