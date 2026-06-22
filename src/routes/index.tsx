@@ -20,6 +20,7 @@ import {
   Check,
   Flame,
 } from "lucide-react";
+import { cn } from "@/lib/utils";
 
 import heroAsset from "@/assets/hero-overlooked.png.asset.json";
 import ba1 from "@/assets/before-after-1.png.asset.json";
