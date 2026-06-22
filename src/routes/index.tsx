@@ -657,8 +657,8 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-8 rounded-2xl border border-primary/30 bg-gradient-to-br from-primary/15 to-primary/5 p-8 sm:p-10 text-center shadow-lg">
-            <p className="text-lg sm:text-xl text-foreground leading-relaxed font-medium">
+          <div className="mt-10">
+            <p className="text-3xl sm:text-4xl md:text-5xl font-black leading-[0.95] tracking-tight uppercase text-center">
               {t.storyClose}
             </p>
           </div>
