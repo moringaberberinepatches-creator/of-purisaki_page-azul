@@ -1,5 +1,13 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useState } from "react";
+import Autoplay from "embla-carousel-autoplay";
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel";
 import {
   ArrowRight,
   ChevronDown,
@@ -12,6 +20,7 @@ import {
   Check,
   Flame,
 } from "lucide-react";
+
 
 const CTA_URL =
   "https://5d7d7dfic5b81t1g8jvo3g2vzs.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=berberine_patch_us&creative=review_v1";
@@ -357,66 +366,81 @@ function LandingPage() {
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">{t.h2dSub}</p>
           </div>
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                img: "de93f9d2-9d71-4a6c-b6bb-c367d30bdb14/produto-pouch.webp",
-                title: "Berberine Patch Original",
-                text: "30-day program — 30 transdermal patches with berberine, fucoxanthin, pomegranate & bioperine. Nature's Ozempic working 24/7.",
-              },
-              {
-                img: "6f03e772-7abc-4636-9f89-900ed4484925/produto-antes-depois.webp",
-                title: "Real, Visible Results",
-                text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
-              },
-              {
-                img: "1f8b92f3-7c84-4b51-9dd5-16c2ad155224/produto-ingredientes.webp",
-                title: "Premium Natural Formula",
-                text: "Botanical actives that gently fire up metabolism, support natural GLP-1 and refine your silhouette comfortably.",
-              },
-              {
-                img: "61540cbd-7d00-439b-a74b-562e957b7609/produto-design.webp",
-                title: "Transdermal Technology",
-                text: "Thin patch that sticks firmly and delivers actives through the skin — no stomach upset, no pills, no nausea.",
-              },
-              {
-                img: "15b2ddfb-17e3-4b97-ae70-a1d4831e3c20/produto-discreto.webp",
-                title: "Discreet & Invisible",
-                text: "Thin, odorless, invisible under any outfit. Wear it at work, at the gym, while you sleep. Stick it and forget it.",
-              },
-              {
-                img: "b6a6f682-7994-4eeb-9d7b-98422d20fafe/produto-medidas.webp",
-                title: "30-Patch Box",
-                text: "30 patches per box = a full 30-day program. 7cm diameter, ready to start your transformation today.",
-              },
-            ].map((card) => (
-              <div
-                key={card.title}
-                className="rounded-2xl bg-card border border-border/40 overflow-hidden hover:border-primary/60 transition-colors"
-              >
-                <div className="aspect-square bg-black/40">
-                  <img
-                    src={`${SRC}/__l5e/assets-v1/${card.img}`}
-                    alt={card.title}
-                    loading="lazy"
-                    className="w-full h-full object-cover"
-                  />
-                </div>
-                <div className="p-5">
-                  <h3 className="font-bold text-lg">{card.title}</h3>
-                  <p className="text-sm text-muted-foreground mt-2 leading-relaxed">{card.text}</p>
-                  <a
-                    href={CTA_URL}
-                    target="_blank"
-                    rel="noopener noreferrer sponsored"
-                    className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
-                  >
-                    I want mine now <ArrowRight className="w-3.5 h-3.5" />
-                  </a>
-                </div>
-              </div>
-            ))}
-          </div>
+          <Carousel
+            opts={{ align: "start", loop: true }}
+            plugins={[Autoplay({ delay: 4500, stopOnInteraction: true })]}
+            className="mt-12"
+          >
+            <CarouselContent className="-ml-4">
+              {[
+                {
+                  img: "de93f9d2-9d71-4a6c-b6bb-c367d30bdb14/produto-pouch.webp",
+                  title: "Berberine Patch Original",
+                  text: "30-day program — 30 transdermal patches with berberine, fucoxanthin, pomegranate & bioperine. Nature's Ozempic working 24/7.",
+                },
+                {
+                  img: "6f03e772-7abc-4636-9f89-900ed4484925/produto-antes-depois.webp",
+                  title: "Real, Visible Results",
+                  text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
+                },
+                {
+                  img: "1f8b92f3-7c84-4b51-9dd5-16c2ad155224/produto-ingredientes.webp",
+                  title: "Premium Natural Formula",
+                  text: "Botanical actives that gently fire up metabolism, support natural GLP-1 and refine your silhouette comfortably.",
+                },
+                {
+                  img: "61540cbd-7d00-439b-a74b-562e957b7609/produto-design.webp",
+                  title: "Transdermal Technology",
+                  text: "Thin patch that sticks firmly and delivers actives through the skin — no stomach upset, no pills, no nausea.",
+                },
+                {
+                  img: "15b2ddfb-17e3-4b97-ae70-a1d4831e3c20/produto-discreto.webp",
+                  title: "Discreet & Invisible",
+                  text: "Thin, odorless, invisible under any outfit. Wear it at work, at the gym, while you sleep. Stick it and forget it.",
+                },
+                {
+                  img: "b6a6f682-7994-4eeb-9d7b-98422d20fafe/produto-medidas.webp",
+                  title: "30-Patch Box",
+                  text: "30 patches per box = a full 30-day program. 7cm diameter, ready to start your transformation today.",
+                },
+              ].map((card) => (
+                <CarouselItem
+                  key={card.title}
+                  className="pl-4 basis-full sm:basis-1/2 lg:basis-1/3"
+                >
+                  <div className="h-full rounded-2xl bg-card border border-border/40 overflow-hidden hover:border-primary/60 transition-colors flex flex-col">
+                    <div className="aspect-square bg-black/40">
+                      <img
+                        src={`${SRC}/__l5e/assets-v1/${card.img}`}
+                        alt={card.title}
+                        loading="lazy"
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div className="p-5 flex-1 flex flex-col">
+                      <h3 className="font-bold text-lg">{card.title}</h3>
+                      <p className="text-sm text-muted-foreground mt-2 leading-relaxed flex-1">
+                        {card.text}
+                      </p>
+                      <a
+                        href={CTA_URL}
+                        target="_blank"
+                        rel="noopener noreferrer sponsored"
+                        className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
+                      >
+                        I want mine now <ArrowRight className="w-3.5 h-3.5" />
+                      </a>
+                    </div>
+                  </div>
+                </CarouselItem>
+              ))}
+            </CarouselContent>
+            <div className="mt-8 flex justify-center gap-3">
+              <CarouselPrevious className="static translate-y-0 bg-primary/15 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground" />
+              <CarouselNext className="static translate-y-0 bg-primary/15 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground" />
+            </div>
+          </Carousel>
+
         </div>
       </section>
 
