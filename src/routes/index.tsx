@@ -790,31 +790,11 @@ function LandingPage() {
           >
             <CarouselContent className="-ml-4">
               {[
-                {
-                  img: pouchAsset.url,
-                  title: "Berberine Patch Original",
-                  text: "30-day program — 30 transdermal patches with our proprietary berberine blend. Nature's Ozempic working 24/7.",
-                },
-                {
-                  img: resultsAsset.url,
-                  title: "Real, Visible Results",
-                  text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
-                },
-                {
-                  img: designAsset.url,
-                  title: "Skin-Fitting Design",
-                  text: "Secure adhesive that's unlikely to fall off — wear it while you work, sleep or rest at home.",
-                },
-                {
-                  img: discreetAsset.url,
-                  title: "Discreet & Invisible",
-                  text: "Thin, inconspicuous and blends seamlessly under any outfit. Gentle formula suitable for most skin types.",
-                },
-                {
-                  img: boxAsset.url,
-                  title: "30-Patch Box",
-                  text: "30 patches per pack — a full 30-day program at 7cm diameter, ready to start your transformation today.",
-                },
+                { img: pouchAsset.url, ...t.gallery.items[0] },
+                { img: resultsAsset.url, ...t.gallery.items[1] },
+                { img: designAsset.url, ...t.gallery.items[2] },
+                { img: discreetAsset.url, ...t.gallery.items[3] },
+                { img: boxAsset.url, ...t.gallery.items[4] },
               ].map((card) => (
                 <CarouselItem
                   key={card.title}
