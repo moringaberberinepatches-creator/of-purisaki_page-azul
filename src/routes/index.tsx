@@ -290,16 +290,16 @@ const copy = {
     ctaSecondary: "Quero ser essa mulher",
     rating: "4.9/5 • milhares de mulheres felizes",
     trust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro", "Fórmula Clinicamente Estudada"],
-    eyebrow1: "Um momento que toda mulher conhece",
-    h2a: "Imagine-se, vestida para impressionar, em um jantar especial com seu marido.",
+    eyebrow1: "O momento em que toda mulher se sente péssima com uma situação que não consegue controlar",
+    h2a: "Imagine-se, você toda produzida para impressionar o seu parceiro em um jantar romântico especial com seu marido.",
     story: [
-      "É a noite perfeita.",
-      "Até que uma mulher deslumbrante passe em frente à sua mesa.",
-      "E ele não consegue tirar os olhos dela.",
-      "Dói, não é?",
+      "Aquela noite perfeita.",
+      "Até que uma mulher deslumbrante, corpinho violão, passe em frente à sua mesa.",
+      "E seu marido não consegue tirar os olhos dela.",
+      "Dói, eu sei que dói, não é?",
     ],
     storyClose:
-      "Agora imagine você usando o adesivo de berberina. Experimente por 30 dias. Se você não ficar impressionada com o que vê no espelho, reembolsamos 100% do seu dinheiro. O risco é todo nosso.",
+      "Agora imagine você usando o adesivo de berberina. Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma semana ou o seu dinheiro de volta. O risco é todo nosso. Experimente por 30 dias. Se você não ficar impressionada se olhando no espelho, reembolsamos 100% do seu dinheiro.",
     eyebrow2: "Antes e depois reais",
     h2b: "O que 30 dias com o adesivo podem fazer",
     h2bSub:
