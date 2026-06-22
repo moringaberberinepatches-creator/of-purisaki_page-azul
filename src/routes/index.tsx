@@ -376,8 +376,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* PRODUCT GALLERY */}
-      <section className="px-4 py-20 bg-black/30 border-y border-white/5">
       {/* COMPARISON: Berberine Patch vs Ozempic / Mounjaro */}
       <section className="px-4 py-20 md:py-28 bg-black/30 border-y border-white/5">
         <div className="max-w-6xl mx-auto">
