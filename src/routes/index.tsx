@@ -820,7 +820,7 @@ function LandingPage() {
                         rel="noopener noreferrer sponsored"
                         className="mt-4 inline-flex items-center gap-1 text-sm font-bold text-primary hover:underline"
                       >
-                        I want mine now <ArrowRight className="w-3.5 h-3.5" />
+                        {t.gallery.cta} <ArrowRight className="w-3.5 h-3.5" />
                       </a>
                     </div>
                   </div>
