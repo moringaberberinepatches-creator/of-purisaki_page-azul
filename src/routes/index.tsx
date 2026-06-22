@@ -32,6 +32,11 @@ import resultsAsset from "@/assets/product-results.webp.asset.json";
 import boxAsset from "@/assets/product-box.webp.asset.json";
 import designAsset from "@/assets/product-design.webp.asset.json";
 import discreetAsset from "@/assets/product-discreet.webp.asset.json";
+import app1 from "@/assets/purisaki-app-1.png.asset.json";
+import app2 from "@/assets/purisaki-app-2.png.asset.json";
+import app3 from "@/assets/purisaki-app-3.png.asset.json";
+import app4 from "@/assets/purisaki-app-4.png.asset.json";
+import app5 from "@/assets/purisaki-app-5.png.asset.json";
 
 
 
@@ -633,6 +638,84 @@ function LandingPage() {
             {t.ctaGo} <ArrowRight className="w-4 h-4" />
           </a>
           <p className="text-xs text-muted-foreground mt-3">{t.redirectNote}</p>
+        </div>
+      </section>
+
+      {/* BONUS — PURISAKI LIFE APP */}
+      <section className="px-4 py-20 md:py-28 hex-bg border-y border-primary/20">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center">
+            <span className="eyebrow inline-flex items-center gap-2">
+              <Flame className="w-3.5 h-3.5" /> Free Bonus · Limited Time
+            </span>
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
+              Get <span className="text-primary">Purisaki Life</span> — your 30-day companion app, <span className="text-primary">FREE</span> with every order.
+            </h2>
+            <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
+              A private 30-day program built around the Berberine Patch — daily guides, meal plans,
+              recipes, mindset tips and progress tracking. Yours at no extra cost when you order today.
+            </p>
+          </div>
+
+          <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
+            <div className="grid grid-cols-3 sm:grid-cols-5 md:grid-cols-3 gap-3">
+              {[app1, app2, app3, app4, app5].map((img, i) => (
+                <div
+                  key={i}
+                  className="rounded-2xl overflow-hidden border border-primary/30 bg-card shadow-[0_20px_60px_-25px_rgba(74,141,255,0.5)]"
+                >
+                  <img
+                    src={img.url}
+                    alt={`Purisaki Life app screenshot ${i + 1}`}
+                    className="w-full h-auto"
+                    loading="lazy"
+                  />
+                </div>
+              ))}
+            </div>
+
+            <div>
+              <h3 className="text-xl sm:text-2xl font-black">What's inside the app:</h3>
+              <ul className="mt-5 space-y-3">
+                {[
+                  "Step-by-step User Guide — apply your patch the right way, every time",
+                  "30-Day Meal Plan — breakfast, lunch, dinner & snacks designed to support fat-burn",
+                  "Healthy Recipes — quick, simple, family-friendly",
+                  "Daily Mindset Tips — stay consistent and motivated",
+                  "Progress Tracker — see your wins week by week",
+                  "Direct Support — questions answered, no guesswork",
+                ].map((item) => (
+                  <li key={item} className="flex gap-3 items-start">
+                    <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
+                    <span className="text-foreground/90">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
+              <div className="mt-6 inline-flex items-center gap-3 rounded-xl border border-primary/40 bg-primary/10 px-4 py-3">
+                <span className="text-2xl">🎁</span>
+                <div className="text-left">
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Value</div>
+                  <div className="font-black">
+                    <span className="line-through text-muted-foreground mr-2">$97</span>
+                    <span className="text-primary">FREE today</span>
+                  </div>
+                </div>
+              </div>
+
+              <a
+                href={CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="btn-cta inline-flex items-center gap-2 px-8 py-4 mt-6 text-sm"
+              >
+                Claim my patch + free app <ArrowRight className="w-4 h-4" />
+              </a>
+              <p className="text-xs text-muted-foreground mt-3">
+                Instant access delivered by email after your order is confirmed.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
