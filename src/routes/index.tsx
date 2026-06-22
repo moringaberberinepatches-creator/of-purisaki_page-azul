@@ -611,10 +611,12 @@ function LandingPage() {
       {/* STORY */}
       <section className="px-4 py-20 md:py-28">
         <div className="max-w-3xl mx-auto text-center">
-          <span className="eyebrow">{t.eyebrow1}</span>
-          <h2 className="mt-4 text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-            {t.h2a}
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight text-primary glow-text">
+            {t.eyebrow1}
           </h2>
+          <p className="mt-4 text-lg sm:text-xl text-muted-foreground leading-relaxed max-w-2xl mx-auto">
+            {t.h2a}
+          </p>
           <div className="mt-10 space-y-4 text-lg text-muted-foreground">
             {t.story.map((line) => (
               <p key={line}>{line}</p>
