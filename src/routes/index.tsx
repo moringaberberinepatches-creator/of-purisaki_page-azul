@@ -217,9 +217,9 @@ const copy = {
 };
 
 function LandingPage() {
-  const [lang, setLang] = useState<Lang>("EN");
-  const t = copy.EN; // PT shown via toggle UI only for parity with source
-  void lang;
+  const [lang, setLang] = useState<Lang>("PT");
+  const t = copy[lang];
+
 
   return (
     <div className="min-h-screen text-foreground">
