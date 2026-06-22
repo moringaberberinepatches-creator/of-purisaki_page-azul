@@ -998,9 +998,9 @@ function LandingPage() {
             {t.finalCta} <ArrowRight className="w-4 h-4" />
           </a>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1.5"><Truck className="w-3.5 h-3.5 text-primary"/> Free U.S. Shipping</span>
-            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-primary"/> 30-Day Guarantee</span>
-            <span className="inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-primary"/> Secure Checkout</span>
+            <span className="inline-flex items-center gap-1.5"><Truck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[0]}</span>
+            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[1]}</span>
+            <span className="inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[2]}</span>
           </div>
         </div>
       </section>
