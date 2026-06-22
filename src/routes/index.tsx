@@ -341,6 +341,13 @@ const copy = {
     finalSub:
       "Cada dia que você espera é mais um dia de energia perdida, confiança perdida e tempo perdido com as pessoas que você ama. O próximo passo está a um clique de distância — na página oficial do fabricante.",
     finalCta: "Garantir meu Berberine Patch",
+    beforeAfter: [
+      { name: "Sarah, 47", line: "Perdeu 6,5 kg e recuperou a autoconfiança." },
+      { name: "Maria, 51", line: "Barriga chapada pela primeira vez em 10 anos." },
+      { name: "Camila, 44", line: "De biquíni novamente depois de dois filhos." },
+      { name: "Renata, 39", line: "Baixou 3 números de roupa em 30 dias." },
+      { name: "Linda, 49", line: "Os shorts antigos agora escorregam direto." },
+    ],
     comparison: {
       eyebrow: "A escolha inteligente",
       title: "Berberine Patch vs ",
