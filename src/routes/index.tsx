@@ -641,7 +641,6 @@ function LandingPage() {
         </div>
       </section>
 
-      {/* GUARANTEE */}
       {/* BONUS — PURISAKI LIFE APP */}
       <section className="px-4 py-20 md:py-28 hex-bg border-y border-primary/20">
         <div className="max-w-6xl mx-auto">
