@@ -312,9 +312,14 @@ const copy = {
       "E seu marido não consegue tirar os olhos dela.",
       "Dói, eu sei que dói, não é?",
     ],
-    storyClose: (
+    storyCloseTitle: (
       <>
-        Agora imagine você usando o <span className="text-primary glow-text">adesivo de berberina</span>.{" "}
+        Agora imagine você usando o{" "}
+        <span className="text-primary glow-text">adesivo de berberina</span>.
+      </>
+    ),
+    storyCloseSubtitle: (
+      <>
         Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma{" "}
         <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
         <span className="text-primary glow-text">O risco é todo nosso.</span> Experimente por{" "}
