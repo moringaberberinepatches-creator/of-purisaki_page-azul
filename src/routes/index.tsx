@@ -99,8 +99,14 @@ const copy = {
       "And he can't take his eyes off her.",
       "It hurts, doesn't it?",
     ],
-    storyClose:
-      "Now picture that woman being you — wearing the Berberine Patch. Try it for a full 30 days. If you're not stunned by what you see in the mirror, we refund 100% of your money. The risk is entirely on us.",
+    storyClose: (
+      <>
+        Now picture that woman being <span className="text-primary glow-text">you</span> — wearing the{" "}
+        <span className="text-primary glow-text">Berberine Patch</span>. Try it for a full{" "}
+        <span className="text-primary glow-text">30 days</span>. If you're not stunned by what you see in the mirror, we refund{" "}
+        <span className="text-primary glow-text">100% of your money</span>. The risk is entirely on us.
+      </>
+    ),
     eyebrow2: "Real before & after",
     h2b: "What 30 days with the patch can do",
     h2bSub:
