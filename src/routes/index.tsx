@@ -971,8 +971,9 @@ function LandingPage() {
           <div className="mx-auto w-40 h-40 rounded-full grid place-items-center border-4 border-primary/60 bg-primary/10 text-center">
             <div>
               <div className="text-4xl font-black text-primary">30</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">Day Money</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">Back</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dias" : "Day"}</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dinheiro" : "Money"}</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "De Volta" : "Back"}</div>
             </div>
           </div>
           <div>
