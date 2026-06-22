@@ -842,24 +842,11 @@ function LandingPage() {
         <div className="max-w-5xl mx-auto text-center">
           <span className="eyebrow">{t.eyebrow5}</span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-            Women are <span className="text-primary">talking</span>.
+            {t.testimonials.titleStart}<span className="text-primary">{t.testimonials.titleAccent}</span>{t.testimonials.titleEnd}
           </h2>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
-            {[
-              {
-                q: "Within a few weeks my fasting glucose dropped so much my doctor literally asked what I was doing differently. I feel like ME again.",
-                a: "Sarah M., 47",
-              },
-              {
-                q: "I lived tired, with that stubborn belly that wouldn't go away. After one month with the patch, my clothes started fitting again. No crazy diet.",
-                a: "Linda K., 52",
-              },
-              {
-                q: "The late-afternoon sugar cravings? Gone. Sounds small but it changed my entire routine — and my body.",
-                a: "Jessica T., 44",
-              },
-            ].map((t2) => (
+            {t.testimonials.items.map((t2) => (
               <figure
                 key={t2.a}
                 className="rounded-2xl border border-border/40 bg-card p-6 flex flex-col"
