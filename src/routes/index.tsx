@@ -22,9 +22,11 @@ import {
 } from "lucide-react";
 
 import heroAsset from "@/assets/hero-overlooked.png.asset.json";
-import sarahAsset from "@/assets/sarah.jpg.asset.json";
-import lindaAsset from "@/assets/linda.jpg.asset.json";
-import jessicaAsset from "@/assets/jessica.jpg.asset.json";
+import ba1 from "@/assets/before-after-1.png.asset.json";
+import ba2 from "@/assets/before-after-2.png.asset.json";
+import ba3 from "@/assets/before-after-3.png.asset.json";
+import ba4 from "@/assets/before-after-4.png.asset.json";
+import ba5 from "@/assets/before-after-5.png.asset.json";
 import pouchAsset from "@/assets/product-pouch.webp.asset.json";
 import resultsAsset from "@/assets/product-results.webp.asset.json";
 import boxAsset from "@/assets/product-box.webp.asset.json";
@@ -295,42 +297,44 @@ function LandingPage() {
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">{t.h2b}</h2>
           <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">{t.h2bSub}</p>
 
-          <div className="mt-12 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[
-              {
-                img: sarahAsset.url,
-                name: "Sarah, 47",
-                line: "Lost 14 lbs and got her confidence back.",
-              },
-              {
-                img: lindaAsset.url,
-                name: "Linda, 52",
-                line: "Flat belly for the first time in 10 years.",
-              },
-              {
-                img: jessicaAsset.url,
-                name: "Jessica, 44",
-                line: "More energy than her own daughter.",
-              },
-            ].map((c) => (
-
-              <div
-                key={c.name}
-                className="rounded-2xl bg-card border border-border/40 overflow-hidden text-left hover:border-primary/60 transition-colors"
-              >
-                <div className="relative">
-                  <img src={c.img} alt={`${c.name} before and after`} className="w-full h-auto" loading="lazy" />
-                  <div className="absolute top-3 left-3 right-3 flex justify-between text-[10px] font-bold tracking-widest">
-                    <span className="bg-black/70 px-2 py-1 rounded-full">BEFORE</span>
-                    <span className="bg-primary text-primary-foreground px-2 py-1 rounded-full">AFTER</span>
-                  </div>
-                </div>
-                <div className="p-5">
-                  <div className="font-bold">{c.name}</div>
-                  <p className="text-sm text-muted-foreground mt-1">{c.line}</p>
-                </div>
-              </div>
-            ))}
+          <div className="mt-12 max-w-5xl mx-auto">
+            <Carousel
+              opts={{ loop: true, align: "start" }}
+              plugins={[Autoplay({ delay: 4500, stopOnInteraction: false })]}
+              className="relative"
+            >
+              <CarouselContent>
+                {[
+                  { img: ba1.url, name: "Sarah, 47", line: "Lost 14 lbs and got her confidence back." },
+                  { img: ba2.url, name: "Maria, 51", line: "Flat belly for the first time in 10 years." },
+                  { img: ba3.url, name: "Camila, 44", line: "Back in a bikini after two kids." },
+                  { img: ba4.url, name: "Renata, 39", line: "Dropped 3 dress sizes in 30 days." },
+                  { img: ba5.url, name: "Linda, 49", line: "Her old shorts now slide right off." },
+                ].map((c) => (
+                  <CarouselItem key={c.name} className="md:basis-1/2 lg:basis-1/2">
+                    <a
+                      href={CTA_URL}
+                      target="_blank"
+                      rel="noopener noreferrer sponsored"
+                      className="block rounded-2xl bg-card border border-border/40 overflow-hidden text-left hover:border-primary/60 transition-colors"
+                    >
+                      <img
+                        src={c.img}
+                        alt={`${c.name} — before and after Berberine Patch`}
+                        className="w-full h-auto"
+                        loading="lazy"
+                      />
+                      <div className="p-5">
+                        <div className="font-bold">{c.name}</div>
+                        <p className="text-sm text-muted-foreground mt-1">{c.line}</p>
+                      </div>
+                    </a>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious className="hidden sm:flex -left-4 md:-left-12 bg-primary text-primary-foreground border-primary hover:bg-primary/90" />
+              <CarouselNext className="hidden sm:flex -right-4 md:-right-12 bg-primary text-primary-foreground border-primary hover:bg-primary/90" />
+            </Carousel>
           </div>
         </div>
       </section>
