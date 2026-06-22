@@ -1,5 +1,5 @@
 import { createFileRoute } from "@tanstack/react-router";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Autoplay from "embla-carousel-autoplay";
 import {
   Carousel,
@@ -473,8 +473,16 @@ const copy = {
 };
 
 function LandingPage() {
-  const [lang, setLang] = useState<Lang>("PT");
+  const [lang, setLang] = useState<Lang>("EN");
   const t = copy[lang];
+
+  useEffect(() => {
+    if (typeof navigator === "undefined") return;
+    const langs = [navigator.language, ...(navigator.languages ?? [])];
+    if (langs.some((l) => l?.toLowerCase().startsWith("pt"))) {
+      setLang("PT");
+    }
+  }, []);
 
 
   return (
