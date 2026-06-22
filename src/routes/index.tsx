@@ -99,12 +99,19 @@ const copy = {
       "And he can't take his eyes off her.",
       "It hurts, doesn't it?",
     ],
-    storyClose: (
+    storyCloseTitle: (
       <>
-        Now picture that woman being <span className="text-primary glow-text">you</span> — wearing the{" "}
-        <span className="text-primary glow-text">Berberine Patch</span>. Try it for a full{" "}
-        <span className="text-primary glow-text">30 days</span>. If you're not stunned by what you see in the mirror, we refund{" "}
-        <span className="text-primary glow-text">100% of your money</span>. The risk is entirely on us.
+        Now picture yourself wearing the{" "}
+        <span className="text-primary glow-text">Berberine Patch</span>.
+      </>
+    ),
+    storyCloseSubtitle: (
+      <>
+        Lose weight while you sleep — stick the patch on, easy and fast, and that's it: see results in{" "}
+        <span className="text-primary glow-text">one week</span> or your money back.{" "}
+        <span className="text-primary glow-text">The risk is entirely on us.</span> Try it for{" "}
+        <span className="text-primary glow-text">30 days</span>. If you're not impressed looking in the mirror, we refund{" "}
+        <span className="text-primary glow-text">100% of your money</span>.
       </>
     ),
     eyebrow2: "Real before & after",
@@ -305,9 +312,14 @@ const copy = {
       "E seu marido não consegue tirar os olhos dela.",
       "Dói, eu sei que dói, não é?",
     ],
-    storyClose: (
+    storyCloseTitle: (
       <>
-        Agora imagine você usando o <span className="text-primary glow-text">adesivo de berberina</span>.{" "}
+        Agora imagine você usando o{" "}
+        <span className="text-primary glow-text">adesivo de berberina</span>.
+      </>
+    ),
+    storyCloseSubtitle: (
+      <>
         Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma{" "}
         <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
         <span className="text-primary glow-text">O risco é todo nosso.</span> Experimente por{" "}
@@ -657,9 +669,12 @@ function LandingPage() {
             </div>
           </div>
 
-          <div className="mt-10">
-            <p className="text-3xl sm:text-4xl md:text-5xl font-black leading-[0.95] tracking-tight uppercase text-center">
-              {t.storyClose}
+          <div className="mt-10 space-y-6">
+            <h3 className="text-3xl sm:text-4xl md:text-5xl font-black leading-[0.95] tracking-tight uppercase text-center">
+              {t.storyCloseTitle}
+            </h3>
+            <p className="text-lg sm:text-xl md:text-2xl text-foreground/90 leading-relaxed text-center max-w-3xl mx-auto">
+              {t.storyCloseSubtitle}
             </p>
           </div>
 
