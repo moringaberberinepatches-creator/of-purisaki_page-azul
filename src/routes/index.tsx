@@ -21,7 +21,7 @@ import {
   Flame,
 } from "lucide-react";
 
-import heroAsset from "@/assets/hero.png.asset.json";
+import heroAsset from "@/assets/hero-overlooked.png.asset.json";
 import sarahAsset from "@/assets/sarah.jpg.asset.json";
 import lindaAsset from "@/assets/linda.jpg.asset.json";
 import jessicaAsset from "@/assets/jessica.jpg.asset.json";
@@ -223,15 +223,20 @@ function LandingPage() {
 
           <div className="relative">
             <div className="absolute inset-0 -m-6 rounded-[2rem] bg-primary/20 blur-3xl" />
-            <div className="relative rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)]">
+            <a
+              href={CTA_URL}
+              target="_blank"
+              rel="noopener noreferrer sponsored"
+              aria-label="Tired of being overlooked? Get the Berberine Patch"
+              className="relative block rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)] transition-transform hover:scale-[1.01]"
+            >
               <img
                 src={heroAsset.url}
                 alt="Tired of being overlooked? Berberine Patch"
                 loading="eager"
                 className="w-full h-auto rounded-2xl"
               />
-
-            </div>
+            </a>
           </div>
         </div>
 
@@ -368,6 +373,104 @@ function LandingPage() {
             />
 
           </div>
+        </div>
+      </section>
+
+      {/* COMPARISON: Berberine Patch vs Ozempic / Mounjaro */}
+      <section className="px-4 py-20 md:py-28 bg-black/30 border-y border-white/5">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center max-w-3xl mx-auto">
+            <span className="eyebrow">The smart choice</span>
+            <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
+              Berberine Patch vs <span className="text-primary glow-text">Ozempic & Mounjaro</span>
+            </h2>
+            <p className="mt-4 text-muted-foreground">
+              Same goal — a slimmer body and steady blood sugar. Very different paths. See why thousands of women are switching to the natural patch.
+            </p>
+          </div>
+
+          <div className="mt-12 grid md:grid-cols-3 gap-6">
+            {/* Berberine Patch */}
+            <div className="rounded-2xl border-2 border-primary/60 bg-card p-6 shadow-[0_20px_80px_-30px_rgba(255,122,26,0.6)] relative">
+              <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-black tracking-widest px-3 py-1 rounded-full">
+                RECOMMENDED
+              </span>
+              <h3 className="text-xl font-black text-primary">Berberine Patch</h3>
+              <p className="text-xs text-muted-foreground mt-1">100% natural • transdermal</p>
+              <ul className="mt-5 space-y-3 text-sm">
+                {[
+                  "No needles, no injections",
+                  "100% natural — Berberine + botanicals",
+                  "No nausea or harsh side effects",
+                  "No prescription needed",
+                  "From $1.65 per day",
+                  "Discreet daily patch — works 24/7",
+                  "30-day money-back guarantee",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2 items-start">
+                    <Check className="w-4 h-4 text-primary shrink-0 mt-0.5" />
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+              <a
+                href={CTA_URL}
+                target="_blank"
+                rel="noopener noreferrer sponsored"
+                className="btn-cta inline-flex items-center justify-center gap-2 w-full px-5 py-3 mt-6 text-sm"
+              >
+                Choose the patch <ArrowRight className="w-4 h-4" />
+              </a>
+            </div>
+
+            {/* Ozempic */}
+            <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
+              <h3 className="text-xl font-black text-muted-foreground">Ozempic</h3>
+              <p className="text-xs text-muted-foreground mt-1">Semaglutide • injection</p>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
+                {[
+                  "Weekly self-injection",
+                  "Synthetic GLP-1 hormone",
+                  "Frequent nausea, vomiting, fatigue",
+                  "Prescription required",
+                  "$900–$1,300 per month",
+                  "Weight often returns when you stop",
+                  "No money-back guarantee",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2 items-start">
+                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            {/* Mounjaro */}
+            <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
+              <h3 className="text-xl font-black text-muted-foreground">Mounjaro</h3>
+              <p className="text-xs text-muted-foreground mt-1">Tirzepatide • injection</p>
+              <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
+                {[
+                  "Weekly self-injection",
+                  "Dual synthetic hormone",
+                  "Nausea, diarrhea, pancreas warnings",
+                  "Prescription required",
+                  "$1,000–$1,500 per month",
+                  "Rebound weight gain reported",
+                  "No money-back guarantee",
+                ].map((item) => (
+                  <li key={item} className="flex gap-2 items-start">
+                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
+                    <span>{item}</span>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </div>
+
+          <p className="text-center text-xs text-muted-foreground mt-8 max-w-2xl mx-auto">
+            Berberine Patch is a natural dietary supplement, not a medication. Comparison is for informational purposes only and is not medical advice.
+          </p>
         </div>
       </section>
 
