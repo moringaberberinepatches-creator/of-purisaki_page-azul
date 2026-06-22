@@ -234,7 +234,7 @@ function LandingPage() {
               target="_blank"
               rel="noopener noreferrer sponsored"
               aria-label="Tired of being overlooked? Get the Berberine Patch"
-              className="relative block rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(255,122,26,0.7)] transition-transform hover:scale-[1.01]"
+              className="relative block rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(74,141,255,0.7)] transition-transform hover:scale-[1.01]"
             >
               <img
                 src={heroAsset.url}
@@ -399,7 +399,7 @@ function LandingPage() {
 
           <div className="mt-12 grid md:grid-cols-3 gap-6">
             {/* Berberine Patch */}
-            <div className="rounded-2xl border-2 border-primary/60 bg-card p-6 shadow-[0_20px_80px_-30px_rgba(255,122,26,0.6)] relative">
+            <div className="rounded-2xl border-2 border-primary/60 bg-card p-6 shadow-[0_20px_80px_-30px_rgba(74,141,255,0.6)] relative">
               <span className="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-primary-foreground text-[10px] font-black tracking-widest px-3 py-1 rounded-full">
                 RECOMMENDED
               </span>
@@ -655,7 +655,7 @@ function LandingPage() {
 
       {/* FINAL CTA */}
       <section className="px-4 pb-24">
-        <div className="max-w-3xl mx-auto rounded-3xl border border-primary/40 bg-gradient-to-b from-card to-black/60 p-10 text-center shadow-[0_30px_120px_-30px_rgba(255,122,26,0.45)]">
+        <div className="max-w-3xl mx-auto rounded-3xl border border-primary/40 bg-gradient-to-b from-card to-black/60 p-10 text-center shadow-[0_30px_120px_-30px_rgba(74,141,255,0.45)]">
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
             {t.finalH}
           </h2>
