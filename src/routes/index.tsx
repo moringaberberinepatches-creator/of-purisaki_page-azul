@@ -941,10 +941,10 @@ function LandingPage() {
               <div className="mt-6 inline-flex items-center gap-3 rounded-xl border border-primary/40 bg-primary/10 px-4 py-3">
                 <span className="text-2xl">🎁</span>
                 <div className="text-left">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">Value</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">{t.bonus.valueLabel}</div>
                   <div className="font-black">
-                    <span className="line-through text-muted-foreground mr-2">$97</span>
-                    <span className="text-primary">FREE today</span>
+                    <span className="line-through text-muted-foreground mr-2">{t.bonus.valueWas}</span>
+                    <span className="text-primary">{t.bonus.valueNow}</span>
                   </div>
                 </div>
               </div>
@@ -955,10 +955,10 @@ function LandingPage() {
                 rel="noopener noreferrer sponsored"
                 className="btn-cta inline-flex items-center gap-2 px-8 py-4 mt-6 text-sm"
               >
-                Claim my patch + free app <ArrowRight className="w-4 h-4" />
+                {t.bonus.cta} <ArrowRight className="w-4 h-4" />
               </a>
               <p className="text-xs text-muted-foreground mt-3">
-                Instant access delivered by email after your order is confirmed.
+                {t.bonus.note}
               </p>
             </div>
           </div>
