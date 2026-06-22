@@ -928,16 +928,9 @@ function LandingPage() {
             </div>
 
             <div>
-              <h3 className="text-xl sm:text-2xl font-black">What's inside the app:</h3>
+              <h3 className="text-xl sm:text-2xl font-black">{t.bonus.insideTitle}</h3>
               <ul className="mt-5 space-y-3">
-                {[
-                  "Step-by-step User Guide — apply your patch the right way, every time",
-                  "30-Day Meal Plan — breakfast, lunch, dinner & snacks designed to support fat-burn",
-                  "Healthy Recipes — quick, simple, family-friendly",
-                  "Daily Mindset Tips — stay consistent and motivated",
-                  "Progress Tracker — see your wins week by week",
-                  "Direct Support — questions answered, no guesswork",
-                ].map((item) => (
+                {t.bonus.items.map((item) => (
                   <li key={item} className="flex gap-3 items-start">
                     <Check className="w-5 h-5 text-primary mt-0.5 shrink-0" />
                     <span className="text-foreground/90">{item}</span>
