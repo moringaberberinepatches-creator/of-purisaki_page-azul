@@ -334,6 +334,127 @@ const copy = {
     finalSub:
       "Cada dia que você espera é mais um dia de energia perdida, confiança perdida e tempo perdido com as pessoas que você ama. O próximo passo está a um clique de distância — na página oficial do fabricante.",
     finalCta: "Garantir meu Berberine Patch",
+    comparison: {
+      eyebrow: "A escolha inteligente",
+      title: "Berberine Patch vs ",
+      titleAccent: "Ozempic & Mounjaro",
+      subtitle:
+        "Mesmo objetivo — um corpo mais magro e açúcar no sangue estável. Caminhos muito diferentes. Veja por que milhares de mulheres estão trocando pelo adesivo natural.",
+      patch: {
+        title: "Berberine Patch",
+        subtitle: "100% natural • transdérmico",
+        badge: "RECOMENDADO",
+        items: [
+          "Sem agulhas, sem injeções",
+          "100% natural — Berberina + botanicals",
+          "Sem náusea ou efeitos colaterais fortes",
+          "Sem receita médica",
+          "A partir de $1.65 por dia",
+          "Adesivo discreto diário — funciona 24/7",
+          "Garantia de reembolso de 30 dias",
+        ],
+        cta: "Escolher o adesivo",
+      },
+      ozempic: {
+        title: "Ozempic",
+        subtitle: "Semaglutida • injeção",
+        items: [
+          "Autoinjeção semanal",
+          "Hormônio GLP-1 sintético",
+          "Náusea frequente, vômito, fadiga",
+          "Receita médica necessária",
+          "$900–$1.300 por mês",
+          "Peso volta quando para",
+          "Sem garantia de reembolso",
+        ],
+      },
+      mounjaro: {
+        title: "Mounjaro",
+        subtitle: "Tirzepatida • injeção",
+        items: [
+          "Autoinjeção semanal",
+          "Hormônio sintético duplo",
+          "Náusea, diarreia, avisos ao pâncreas",
+          "Receita médica necessária",
+          "$1.000–$1.500 por mês",
+          "Ganho de peso de volta relatado",
+          "Sem garantia de reembolso",
+        ],
+      },
+      disclaimer:
+        "Berberine Patch é um suplemento alimentar natural, não um medicamento. A comparação é apenas informativa e não constitui orientação médica.",
+    },
+    gallery: {
+      items: [
+        {
+          title: "Berberine Patch Original",
+          text: "Programa de 30 dias — 30 adesivos transdérmicos com nossa mistura exclusiva de berberina. O Ozempic da natureza trabalhando 24/7.",
+        },
+        {
+          title: "Resultados Reais e Visíveis",
+          text: "Mulheres reais relatam barriga mais chapada, menos desejos e mais energia em semanas. Sem dietas extremas. Sem agulhas.",
+        },
+        {
+          title: "Design que Se Adere à Pele",
+          text: "Adesivo seguro que dificilmente solta — use enquanto trabalha, dorme ou descansa em casa.",
+        },
+        {
+          title: "Discreto e Invisível",
+          text: "Fino, discreto e se mistura perfeitamente sob qualquer roupa. Fórmula suave adequada para a maioria dos tipos de pele.",
+        },
+        {
+          title: "Caixa com 30 Adesivos",
+          text: "30 adesivos por embalagem — programa completo de 30 dias com 7cm de diâmetro, pronto para iniciar sua transformação hoje.",
+        },
+      ],
+      cta: "Quero o meu agora",
+    },
+    testimonials: {
+      titleStart: "Mulheres estão ",
+      titleAccent: "falando",
+      titleEnd: ".",
+      items: [
+        {
+          q: "Em poucas semanas minha glicemia em jejum caiu tanto que meu médico literalmente perguntou o que eu estava fazendo de diferente. Eu me sinto EU de novo.",
+          a: "Sarah M., 47",
+        },
+        {
+          q: "Eu vivia cansada, com aquela barriga teimosa que não ia embora. Depois de um mês com o adesivo, minhas roupas começaram a servir de novo. Sem dieta maluca.",
+          a: "Linda K., 52",
+        },
+        {
+          q: "Aqueles desejos por doce no final da tarde? Foram embora. Parece pouco, mas mudou minha rotina inteira — e meu corpo.",
+          a: "Jessica T., 44",
+        },
+      ],
+    },
+    bonus: {
+      eyebrow: "Bônus Grátis · Por Tempo Limitado",
+      titleStart: "Ganhe o ",
+      titleAccent1: "Purisaki Life",
+      titleMid: " — seu app companheiro de 30 dias, ",
+      titleAccent2: "GRÁTIS",
+      titleEnd: " em todo pedido.",
+      subtitle:
+        "Um programa privado de 30 dias construído em torno do Berberine Patch — guias diários, plano de refeições, receitas, dicas de mentalidade e acompanhamento de progresso. Seu sem custo extra ao comprar hoje.",
+      insideTitle: "O que tem dentro do app:",
+      items: [
+        "Guia do Usuário passo a passo — aplique seu adesivo da forma certa, sempre",
+        "Plano Alimentar de 30 Dias — café da manhã, almoço, jantar e lanches para apoiar a queima de gordura",
+        "Receitas Saudáveis — rápidas, simples, para toda a família",
+        "Dicas Diárias de Mentalidade — mantenha consistência e motivação",
+        "Acompanhamento de Progresso — veja suas conquistas semana a semana",
+        "Suporte Direto — tire dúvidas, sem adivinhações",
+      ],
+      valueLabel: "Valor",
+      valueWas: "$97",
+      valueNow: "GRÁTIS hoje",
+      cta: "Garantir meu adesivo + app grátis",
+      note: "Acesso instantâneo enviado por email após a confirmação do pedido.",
+    },
+    footerDisclaimer:
+      "As alegações não foram avaliadas pela FDA. Este produto não se destina a diagnosticar, tratar, curar ou prevenir qualquer doença. Resultados podem variar.",
+    finalTrust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro"],
   },
 };
 
