@@ -900,14 +900,13 @@ function LandingPage() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center">
             <span className="eyebrow inline-flex items-center gap-2">
-              <Flame className="w-3.5 h-3.5" /> Free Bonus · Limited Time
+              <Flame className="w-3.5 h-3.5" /> {t.bonus.eyebrow}
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-              Get <span className="text-primary">Purisaki Life</span> — your 30-day companion app, <span className="text-primary">FREE</span> with every order.
+              {t.bonus.titleStart}<span className="text-primary">{t.bonus.titleAccent1}</span>{t.bonus.titleMid}<span className="text-primary">{t.bonus.titleAccent2}</span>{t.bonus.titleEnd}
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
-              A private 30-day program built around the Berberine Patch — daily guides, meal plans,
-              recipes, mindset tips and progress tracking. Yours at no extra cost when you order today.
+              {t.bonus.subtitle}
             </p>
           </div>
 
