@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "43b43d4b-75a8-40ba-ac1e-178637f496a1",
-  "project_id": "3c3b9953-5a26-4522-92e3-8b96eb04eecf",
-  "url": "/__l5e/assets-v1/43b43d4b-75a8-40ba-ac1e-178637f496a1/before-after-4.png",
-  "r2_key": "a/v1/3c3b9953-5a26-4522-92e3-8b96eb04eecf/43b43d4b-75a8-40ba-ac1e-178637f496a1/before-after-4.png",
-  "original_filename": "before-after-4.png",
-  "size": 2075493,
   "content_type": "image/png",
-  "created_at": "2026-06-22T19:40:26Z"
+  "created_at": "2026-06-22T19:40:26Z",
+  "original_filename": "before-after-4.png",
+  "project_id": "88c2c658-d3f0-42ae-8a63-45dea5453fae",
+  "r2_key": "a/v1/88c2c658-d3f0-42ae-8a63-45dea5453fae/43b43d4b-75a8-40ba-ac1e-178637f496a1/before-after-4.png",
+  "size": 2075493,
+  "url": "/__l5e/assets-v1/43b43d4b-75a8-40ba-ac1e-178637f496a1/before-after-4.png",
+  "version": 1
 }

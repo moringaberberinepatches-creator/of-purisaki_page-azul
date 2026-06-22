@@ -1,11 +1,11 @@
 {
-  "version": 1,
   "asset_id": "8d271534-52e8-4f66-ab91-52ced674c5ab",
-  "project_id": "3c3b9953-5a26-4522-92e3-8b96eb04eecf",
-  "url": "/__l5e/assets-v1/8d271534-52e8-4f66-ab91-52ced674c5ab/purisaki-app-home-en.png",
-  "r2_key": "a/v1/3c3b9953-5a26-4522-92e3-8b96eb04eecf/8d271534-52e8-4f66-ab91-52ced674c5ab/purisaki-app-home-en.png",
-  "original_filename": "purisaki-app-home-en.png",
-  "size": 536039,
   "content_type": "image/png",
-  "created_at": "2026-06-22T20:15:48Z"
+  "created_at": "2026-06-22T20:15:48Z",
+  "original_filename": "purisaki-app-home-en.png",
+  "project_id": "88c2c658-d3f0-42ae-8a63-45dea5453fae",
+  "r2_key": "a/v1/88c2c658-d3f0-42ae-8a63-45dea5453fae/8d271534-52e8-4f66-ab91-52ced674c5ab/purisaki-app-home-en.png",
+  "size": 536039,
+  "url": "/__l5e/assets-v1/8d271534-52e8-4f66-ab91-52ced674c5ab/purisaki-app-home-en.png",
+  "version": 1
 }
