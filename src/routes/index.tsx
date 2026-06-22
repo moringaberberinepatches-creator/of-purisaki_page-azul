@@ -638,7 +638,13 @@ function LandingPage() {
               className="relative"
             >
               <CarouselContent>
-                {t.beforeAfter.map((c) => (
+                {[
+                  { img: ba1.url, ...t.beforeAfter[0] },
+                  { img: ba2.url, ...t.beforeAfter[1] },
+                  { img: ba3.url, ...t.beforeAfter[2] },
+                  { img: ba4.url, ...t.beforeAfter[3] },
+                  { img: ba5.url, ...t.beforeAfter[4] },
+                ].map((c) => (
                   <CarouselItem key={c.name} className="md:basis-1/2 lg:basis-1/2">
                     <a
                       href={CTA_URL}
