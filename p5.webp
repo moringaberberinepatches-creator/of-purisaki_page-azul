@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Purisaki Berberine Patch Reviews — Does It Really Work? (2026)</title>
+    <meta name="description" content="Purisaki Berberine Patch reviews: how the transdermal berberine weight-loss patch works, real before/after results, side effects, and 30-day money-back guarantee." />
+    <meta name="keywords" content="purisaki, purisaki patches, purisaki berberine patch, berberine patch, berberine patches reviews, berberine patch reviews, berberine weight loss patches" />
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta name="google-site-verification" content="Emv57POwospRsBggWH2MTWSOHhWyGwMFUJSWKyy4s3I" />
+    <link rel="canonical" href="https://moringaberberinepatches.com/" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta property="og:type" content="product" />
+    <meta property="og:title" content="Purisaki Berberine Patch — Real Reviews, Real Results, 30-Day Guarantee" />
+    <meta property="og:description" content="Does the Purisaki Berberine Patch really work? Burn stubborn belly fat, balance blood sugar and reclaim your confidence — risk-free for 30 days." />
+    <meta property="og:url" content="https://moringaberberinepatches.com/" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Purisaki Berberine Patch — Real Reviews & Results" />
+    <meta name="twitter:description" content="The transdermal berberine patch for weight management. 30-day money-back guarantee on the official site." />
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B2FL5W08KR"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      // ===== Rastreamento máximo: capturar origem do visitante =====
+      (function(){
+        try {
+          var params = new URLSearchParams(window.location.search);
+          var ref = document.referrer || '';
+          var refHost = '';
+          try { refHost = ref ? new URL(ref).hostname : ''; } catch(e){}
+
+          var engines = {google:'Google',bing:'Bing',yahoo:'Yahoo',duckduckgo:'DuckDuckGo',yandex:'Yandex',ecosia:'Ecosia',brave:'Brave',baidu:'Baidu'};
+          var searchEngine = '';
+          for (var k in engines) { if (refHost.indexOf(k) !== -1) { searchEngine = engines[k]; break; } }
+          var organicTerm = '';
+          if (ref) { try { var r = new URL(ref); organicTerm = r.searchParams.get('q') || r.searchParams.get('query') || r.searchParams.get('p') || ''; } catch(e){} }
+
+          var ts = {
+            utm_source:   params.get('utm_source')   || (searchEngine ? searchEngine.toLowerCase() : (refHost || 'direct')),
+            utm_medium:   params.get('utm_medium')   || (searchEngine ? 'organic' : (refHost ? 'referral' : 'none')),
+            utm_campaign: params.get('utm_campaign') || '(not set)',
+            utm_term:     params.get('utm_term')     || organicTerm || '(not provided)',
+            utm_content:  params.get('utm_content')  || '(not set)',
+            gclid:        params.get('gclid')        || '',
+            fbclid:       params.get('fbclid')       || '',
+            referrer:     ref,
+            referrer_host: refHost,
+            search_engine: searchEngine,
+            organic_search_term: organicTerm,
+            landing_page: window.location.pathname + window.location.search,
+            landing_url:  window.location.href
+          };
+
+          try {
+            if (!localStorage.getItem('first_touch')) {
+              localStorage.setItem('first_touch', JSON.stringify(Object.assign({ts:Date.now()}, ts)));
+            }
+            sessionStorage.setItem('last_touch', JSON.stringify(ts));
+          } catch(e){}
+
+          var ft = {}; try { ft = JSON.parse(localStorage.getItem('first_touch')||'{}'); } catch(e){}
+          gtag('set', 'user_properties', {
+            first_utm_source:   ft.utm_source   || ts.utm_source,
+            first_utm_medium:   ft.utm_medium   || ts.utm_medium,
+            first_utm_campaign: ft.utm_campaign || ts.utm_campaign,
+            first_utm_term:     ft.utm_term     || ts.utm_term,
+            last_search_engine: ts.search_engine,
+            last_organic_term:  ts.organic_search_term
+          });
+
+          gtag('config', 'G-B2FL5W08KR', {
+            page_location: window.location.href,
+            page_referrer: ref,
+            campaign_source:  ts.utm_source,
+            campaign_medium:  ts.utm_medium,
+            campaign_name:    ts.utm_campaign,
+            campaign_term:    ts.utm_term,
+            campaign_content: ts.utm_content
+          });
+
+          gtag('event', 'traffic_source_captured', ts);
+          window.dataLayer.push(Object.assign({ event: 'traffic_source' }, ts));
+          window.__trafficSource = ts;
+        } catch(err) {
+          gtag('config', 'G-B2FL5W08KR');
+        }
+      })();
+    </script>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-KLSPTWRM');
+    </script>
+    <script type="module" crossorigin src="/assets/index-WZSwg7RR.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-DzDabxLD.css">
+  </head>
+  <body>
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KLSPTWRM" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <div id="root"></div>
+  </body>
+</html>
