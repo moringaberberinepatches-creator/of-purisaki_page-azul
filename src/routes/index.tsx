@@ -141,6 +141,127 @@ const copy = {
     finalSub:
       "Every day you wait is another day of lost energy, lost confidence and lost time with the people you love. The next step is one click away — on the official manufacturer page.",
     finalCta: "Claim my Berberine Patch",
+    comparison: {
+      eyebrow: "The smart choice",
+      title: "Berberine Patch vs ",
+      titleAccent: "Ozempic & Mounjaro",
+      subtitle:
+        "Same goal — a slimmer body and steady blood sugar. Very different paths. See why thousands of women are switching to the natural patch.",
+      patch: {
+        title: "Berberine Patch",
+        subtitle: "100% natural • transdermal",
+        badge: "RECOMMENDED",
+        items: [
+          "No needles, no injections",
+          "100% natural — Berberine + botanicals",
+          "No nausea or harsh side effects",
+          "No prescription needed",
+          "From $1.65 per day",
+          "Discreet daily patch — works 24/7",
+          "30-day money-back guarantee",
+        ],
+        cta: "Choose the patch",
+      },
+      ozempic: {
+        title: "Ozempic",
+        subtitle: "Semaglutide • injection",
+        items: [
+          "Weekly self-injection",
+          "Synthetic GLP-1 hormone",
+          "Frequent nausea, vomiting, fatigue",
+          "Prescription required",
+          "$900–$1,300 per month",
+          "Weight often returns when you stop",
+          "No money-back guarantee",
+        ],
+      },
+      mounjaro: {
+        title: "Mounjaro",
+        subtitle: "Tirzepatide • injection",
+        items: [
+          "Weekly self-injection",
+          "Dual synthetic hormone",
+          "Nausea, diarrhea, pancreas warnings",
+          "Prescription required",
+          "$1,000–$1,500 per month",
+          "Rebound weight gain reported",
+          "No money-back guarantee",
+        ],
+      },
+      disclaimer:
+        "Berberine Patch is a natural dietary supplement, not a medication. Comparison is for informational purposes only and is not medical advice.",
+    },
+    gallery: {
+      items: [
+        {
+          title: "Berberine Patch Original",
+          text: "30-day program — 30 transdermal patches with our proprietary berberine blend. Nature's Ozempic working 24/7.",
+        },
+        {
+          title: "Real, Visible Results",
+          text: "Real women report a flatter belly, fewer cravings and more energy in weeks. No extreme diets. No needles.",
+        },
+        {
+          title: "Skin-Fitting Design",
+          text: "Secure adhesive that's unlikely to fall off — wear it while you work, sleep or rest at home.",
+        },
+        {
+          title: "Discreet & Invisible",
+          text: "Thin, inconspicuous and blends seamlessly under any outfit. Gentle formula suitable for most skin types.",
+        },
+        {
+          title: "30-Patch Box",
+          text: "30 patches per pack — a full 30-day program at 7cm diameter, ready to start your transformation today.",
+        },
+      ],
+      cta: "I want mine now",
+    },
+    testimonials: {
+      titleStart: "Women are ",
+      titleAccent: "talking",
+      titleEnd: ".",
+      items: [
+        {
+          q: "Within a few weeks my fasting glucose dropped so much my doctor literally asked what I was doing differently. I feel like ME again.",
+          a: "Sarah M., 47",
+        },
+        {
+          q: "I lived tired, with that stubborn belly that wouldn't go away. After one month with the patch, my clothes started fitting again. No crazy diet.",
+          a: "Linda K., 52",
+        },
+        {
+          q: "The late-afternoon sugar cravings? Gone. Sounds small but it changed my entire routine — and my body.",
+          a: "Jessica T., 44",
+        },
+      ],
+    },
+    bonus: {
+      eyebrow: "Free Bonus · Limited Time",
+      titleStart: "Get ",
+      titleAccent1: "Purisaki Life",
+      titleMid: " — your 30-day companion app, ",
+      titleAccent2: "FREE",
+      titleEnd: " with every order.",
+      subtitle:
+        "A private 30-day program built around the Berberine Patch — daily guides, meal plans, recipes, mindset tips and progress tracking. Yours at no extra cost when you order today.",
+      insideTitle: "What's inside the app:",
+      items: [
+        "Step-by-step User Guide — apply your patch the right way, every time",
+        "30-Day Meal Plan — breakfast, lunch, dinner & snacks designed to support fat-burn",
+        "Healthy Recipes — quick, simple, family-friendly",
+        "Daily Mindset Tips — stay consistent and motivated",
+        "Progress Tracker — see your wins week by week",
+        "Direct Support — questions answered, no guesswork",
+      ],
+      valueLabel: "Value",
+      valueWas: "$97",
+      valueNow: "FREE today",
+      cta: "Claim my patch + free app",
+      note: "Instant access delivered by email after your order is confirmed.",
+    },
+    footerDisclaimer:
+      "Statements have not been evaluated by the FDA. This product is not intended to diagnose, treat, cure or prevent any disease. Results vary.",
+    finalTrust: ["Free U.S. Shipping", "30-Day Guarantee", "Secure Checkout"],
   },
   PT: {
     promo: "OFERTA OFICIAL POR TEMPO LIMITADO • ESTOQUE LIMITADO • FRETE GRÁTIS EUA",
