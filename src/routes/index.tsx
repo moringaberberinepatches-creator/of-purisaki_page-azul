@@ -142,6 +142,78 @@ const copy = {
       "Every day you wait is another day of lost energy, lost confidence and lost time with the people you love. The next step is one click away — on the official manufacturer page.",
     finalCta: "Claim my Berberine Patch",
   },
+  PT: {
+    promo: "OFERTA OFICIAL POR TEMPO LIMITADO • ESTOQUE LIMITADO • FRETE GRÁTIS EUA",
+    chip: "Berberina • Tecnologia Transdérmica",
+    h1a: "Torne-se a mulher ",
+    h1b: "que ele não consegue",
+    h1c: " parar de olhar.",
+    sub: (
+      <>
+        Milhares de mulheres acima dos 40 trocaram pílulas agressivas e dietas impossíveis pelo{" "}
+        <strong>Berberine Patch</strong> — um adesivo discreto que funciona 24/7 com tecnologia
+        transdérmica.{" "}
+        <span className="text-primary font-semibold">
+          Veja por que virou fenômeno nos EUA.
+        </span>
+      </>
+    ),
+    ctaPrimary: "Visitar o site oficial",
+    ctaSecondary: "Quero ser essa mulher",
+    rating: "4.9/5 • milhares de mulheres felizes",
+    trust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro", "Fórmula Clinicamente Estudada"],
+    eyebrow1: "Um momento que toda mulher conhece",
+    h2a: "Imagine-se, vestida para impressionar, em um jantar especial com seu marido.",
+    story: [
+      "É a noite perfeita.",
+      "Até que uma mulher deslumbrante passe em frente à sua mesa.",
+      "E ele não consegue tirar os olhos dela.",
+      "Dói, não é?",
+    ],
+    storyClose:
+      "Agora imagine você usando o adesivo de berberina. Experimente por 30 dias. Se você não ficar impressionada com o que vê no espelho, reembolsamos 100% do seu dinheiro. O risco é todo nosso.",
+    eyebrow2: "Antes e depois reais",
+    h2b: "O que 30 dias com o adesivo podem fazer",
+    h2bSub:
+      "Mulheres reais, transformações reais. Cada uma usou o Berberine Patch todos os dias — sem dietas malucas, sem treinos punitivos.",
+    eyebrow3: "A solução cabe em um único adesivo",
+    h2c: "Conheça o Berberine Patch.",
+    h2cSub:
+      "Um adesivo discreto que libera berberina pura através da pele — o composto natural que pesquisadores compararam à Metformina em estudos clínicos. Sem pílulas. Sem náusea. Sem esforço.",
+    bullets: [
+      "Açúcar no sangue estável o dia todo.",
+      "Menos vontade de doces e menos petiscadas à noite.",
+      "Gordura da barriga derretendo semana após semana.",
+      "Energia estável — sem o cansaço da tarde.",
+      "Suas roupas favoritas vestindo novamente — sem dietas malucas.",
+    ],
+    ctaOffer: "Ver a oferta no site oficial",
+    eyebrow4: "Conheça o produto",
+    h2d: "Por dentro do Berberine Patch",
+    h2dSub:
+      "Cada detalhe do adesivo que mulheres em todo lugar estão adorando para emagrecer — sem agulhas.",
+    eyebrow5: "Mulheres reais, resultados reais",
+    eyebrow6: "Disponível apenas no site oficial",
+    h2e: "Receba seu Berberine Patch direto do fabricante",
+    h2eSub:
+      "Para protegê-la de falsificações e garantir o preço promocional, o Berberine Patch é vendido apenas na página oficial do fabricante. É lá que estão os kits com desconto, o checkout seguro e a garantia de 30 dias.",
+    whatNext: "O que você verá na próxima página:",
+    nextItems: [
+      "Kits oficiais com até 60% off",
+      "Frete grátis e bônus exclusivos",
+      "Garantia incondicional de 30 dias",
+      "Checkout 100% seguro via ClickBank",
+    ],
+    ctaGo: "Ir para o site oficial",
+    redirectNote: "Você será redirecionada para a página oficial do fabricante",
+    h2f: "Garantia de 30 Dias com Reembolso Total",
+    guaranteeText:
+      "Experimente o Berberine Patch por 30 dias completos através do site oficial. Se você não ficar genuinamente impressionada com a mudança no seu corpo, energia e confiança, o fabricante reembolsa 100% do seu dinheiro. Sem perguntas. O risco é todo nosso.",
+    finalH: "Sua nova versão começa hoje.",
+    finalSub:
+      "Cada dia que você espera é mais um dia de energia perdida, confiança perdida e tempo perdido com as pessoas que você ama. O próximo passo está a um clique de distância — na página oficial do fabricante.",
+    finalCta: "Garantir meu Berberine Patch",
+  },
 };
 
 function LandingPage() {
