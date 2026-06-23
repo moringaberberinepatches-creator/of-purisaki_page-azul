@@ -6,9 +6,7 @@ import { z } from "zod";
  */
 export const envSchema = z.object({
   // Variáveis do servidor (process.env)
-  NODE_ENV: z
-    .enum(["development", "production", "test"])
-    .default("development"),
+  NODE_ENV: z.enum(["development", "production", "test"]).default("development"),
   PORT: z.coerce.number().default(3000),
   HOST: z.string().default("0.0.0.0"),
 
@@ -37,7 +35,7 @@ export function validateEnv(rawEnv: Record<string, string | undefined> = process
       .join("\n");
 
     throw new Error(
-      `[ENV VALIDATION FAILED]\nAs seguintes variáveis de ambiente estão inválidas ou faltando:\n${issues}\n\nVerifique seu arquivo .env ou as variáveis configuradas no servidor.`
+      `[ENV VALIDATION FAILED]\nAs seguintes variáveis de ambiente estão inválidas ou faltando:\n${issues}\n\nVerifique seu arquivo .env ou as variáveis configuradas no servidor.`,
     );
   }
 

@@ -35,10 +35,7 @@ try {
 
   // Tenta importar o bundle gerado pelo Nitro no local padrão (.output)
   // ou no diretório customizado (dist).
-  const possiblePaths = [
-    "../.output/server/index.mjs",
-    "../dist/server/index.mjs",
-  ];
+  const possiblePaths = ["../.output/server/index.mjs", "../dist/server/index.mjs"];
 
   let imported = false;
   for (const p of possiblePaths) {
@@ -54,7 +51,7 @@ try {
   if (!imported) {
     console.error(
       "❌ Não foi possível localizar o bundle do servidor.\n" +
-        "   Certifique-se de rodar 'npm run build' antes de 'npm start'."
+        "   Certifique-se de rodar 'npm run build' antes de 'npm start'.",
     );
     process.exit(1);
   }

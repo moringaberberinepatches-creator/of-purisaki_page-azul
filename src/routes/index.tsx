@@ -22,21 +22,7 @@ import {
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
-import heroAsset from "@/assets/hero-overlooked.png.asset.json";
-import ba1 from "@/assets/before-after-1.png.asset.json";
-import ba2 from "@/assets/before-after-2.png.asset.json";
-import ba3 from "@/assets/before-after-3.png.asset.json";
-import ba4 from "@/assets/before-after-4.png.asset.json";
-import ba5 from "@/assets/before-after-5.png.asset.json";
-import pouchAsset from "@/assets/product-pouch.webp.asset.json";
-import resultsAsset from "@/assets/product-results.webp.asset.json";
-import boxAsset from "@/assets/product-box.webp.asset.json";
-import designAsset from "@/assets/product-design.webp.asset.json";
-import discreetAsset from "@/assets/product-discreet.webp.asset.json";
-import app1 from "@/assets/purisaki-app-1.png.asset.json";
-import app2 from "@/assets/purisaki-app-2.png.asset.json";
-
-
+import { images } from "@/lib/assets";
 
 const CTA_URL =
   "https://5d7d7dfic5b81t1g8jvo3g2vzs.hop.clickbank.net/?&traffic_source=google&traffic_type=search&campaign=berberine_patch_us&creative=review_v1";
@@ -90,7 +76,12 @@ const copy = {
     ctaPrimary: "Visit the official site",
     ctaSecondary: "I want to be that woman",
     rating: "4.9/5 • thousands of happy women",
-    trust: ["Free U.S. Shipping", "30-Day Guarantee", "Secure Checkout", "Clinically-Studied Formula"],
+    trust: [
+      "Free U.S. Shipping",
+      "30-Day Guarantee",
+      "Secure Checkout",
+      "Clinically-Studied Formula",
+    ],
     eyebrow1: "A moment every woman knows",
     h2a: "Picture yourself, dressed to impress, at a special dinner with your husband.",
     story: [
@@ -107,11 +98,11 @@ const copy = {
     ),
     storyCloseSubtitle: (
       <>
-        Lose weight while you sleep — stick the patch on, easy and fast, and that's it: see results in{" "}
-        <span className="text-primary glow-text">one week</span> or your money back.{" "}
+        Lose weight while you sleep — stick the patch on, easy and fast, and that's it: see results
+        in <span className="text-primary glow-text">one week</span> or your money back.{" "}
         <span className="text-primary glow-text">The risk is entirely on us.</span> Try it for{" "}
-        <span className="text-primary glow-text">30 days</span>. If you're not impressed looking in the mirror, we refund{" "}
-        <span className="text-primary glow-text">100% of your money</span>.
+        <span className="text-primary glow-text">30 days</span>. If you're not impressed looking in
+        the mirror, we refund <span className="text-primary glow-text">100% of your money</span>.
       </>
     ),
     eyebrow2: "Real before & after",
@@ -295,16 +286,20 @@ const copy = {
         Milhares de mulheres acima dos 40 trocaram pílulas agressivas e dietas impossíveis pelo{" "}
         <strong>Berberine Patch</strong> — um adesivo discreto que funciona 24/7 com tecnologia
         transdérmica.{" "}
-        <span className="text-primary font-semibold">
-          Veja por que virou fenômeno nos EUA.
-        </span>
+        <span className="text-primary font-semibold">Veja por que virou fenômeno nos EUA.</span>
       </>
     ),
     ctaPrimary: "Visitar o site oficial",
     ctaSecondary: "Quero ser essa mulher",
     rating: "4.9/5 • milhares de mulheres felizes",
-    trust: ["Frete Grátis EUA", "Garantia de 30 Dias", "Checkout Seguro", "Fórmula Clinicamente Estudada"],
-    eyebrow1: "O momento em que toda mulher se sente péssima com uma situação que não consegue controlar",
+    trust: [
+      "Frete Grátis EUA",
+      "Garantia de 30 Dias",
+      "Checkout Seguro",
+      "Fórmula Clinicamente Estudada",
+    ],
+    eyebrow1:
+      "O momento em que toda mulher se sente péssima com uma situação que não consegue controlar",
     h2a: "Imagine-se, você toda produzida para impressionar o seu parceiro em um jantar romântico especial com seu marido.",
     story: [
       "Aquela noite perfeita.",
@@ -320,10 +315,11 @@ const copy = {
     ),
     storyCloseSubtitle: (
       <>
-        Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados em uma{" "}
-        <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
+        Podendo emagrecer dormindo — colou o adesivo, fácil e rápido, e pronto: veja os resultados
+        em uma <span className="text-primary glow-text">semana</span> ou o seu dinheiro de volta.{" "}
         <span className="text-primary glow-text">O risco é todo nosso.</span> Experimente por{" "}
-        <span className="text-primary glow-text">30 dias</span>. Se você não ficar impressionada se olhando no espelho, reembolsamos{" "}
+        <span className="text-primary glow-text">30 dias</span>. Se você não ficar impressionada se
+        olhando no espelho, reembolsamos{" "}
         <span className="text-primary glow-text">100% do seu dinheiro</span>.
       </>
     ),
@@ -511,7 +507,6 @@ function LandingPage() {
     }
   }, []);
 
-
   return (
     <div className="min-h-screen text-foreground">
       {/* Promo bar */}
@@ -602,7 +597,7 @@ function LandingPage() {
               className="relative block rounded-3xl border border-primary/30 bg-black/40 backdrop-blur p-2 shadow-[0_30px_120px_-30px_rgba(74,141,255,0.7)] transition-transform hover:scale-[1.01]"
             >
               <img
-                src={heroAsset.url}
+                src={images.hero}
                 alt="Tired of being overlooked? Berberine Patch"
                 loading="eager"
                 className="w-full h-auto rounded-2xl"
@@ -660,7 +655,7 @@ function LandingPage() {
                     "text-lg sm:text-xl leading-relaxed",
                     idx === t.story.length - 1
                       ? "text-foreground font-semibold"
-                      : "text-muted-foreground"
+                      : "text-muted-foreground",
                   )}
                 >
                   {line}
@@ -686,9 +681,7 @@ function LandingPage() {
           >
             {t.ctaSecondary} <ArrowRight className="w-4 h-4" />
           </a>
-          <p className="mt-4 text-xs text-muted-foreground tracking-wide">
-            {t.redirectNote}
-          </p>
+          <p className="mt-4 text-xs text-muted-foreground tracking-wide">{t.redirectNote}</p>
         </div>
       </section>
 
@@ -707,11 +700,11 @@ function LandingPage() {
             >
               <CarouselContent>
                 {[
-                  { img: ba1.url, ...t.beforeAfter[0] },
-                  { img: ba2.url, ...t.beforeAfter[1] },
-                  { img: ba3.url, ...t.beforeAfter[2] },
-                  { img: ba4.url, ...t.beforeAfter[3] },
-                  { img: ba5.url, ...t.beforeAfter[4] },
+                  { img: images.beforeAfter1, ...t.beforeAfter[0] },
+                  { img: images.beforeAfter2, ...t.beforeAfter[1] },
+                  { img: images.beforeAfter3, ...t.beforeAfter[2] },
+                  { img: images.beforeAfter4, ...t.beforeAfter[3] },
+                  { img: images.beforeAfter5, ...t.beforeAfter[4] },
                 ].map((c) => (
                   <CarouselItem key={c.name} className="md:basis-1/2 lg:basis-1/2">
                     <a
@@ -772,12 +765,11 @@ function LandingPage() {
           <div className="relative">
             <div className="absolute inset-0 bg-primary/20 blur-3xl rounded-full" />
             <img
-              src={pouchAsset.url}
+              src={images.pouch}
               alt="Berberine Patch product"
               loading="lazy"
               className="relative w-full h-auto rounded-3xl border border-primary/30 bg-black/40 p-2"
             />
-
           </div>
         </div>
       </section>
@@ -788,11 +780,10 @@ function LandingPage() {
           <div className="text-center max-w-3xl mx-auto">
             <span className="eyebrow">{t.comparison.eyebrow}</span>
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-              {t.comparison.title}<span className="text-primary glow-text">{t.comparison.titleAccent}</span>
+              {t.comparison.title}
+              <span className="text-primary glow-text">{t.comparison.titleAccent}</span>
             </h2>
-            <p className="mt-4 text-muted-foreground">
-              {t.comparison.subtitle}
-            </p>
+            <p className="mt-4 text-muted-foreground">{t.comparison.subtitle}</p>
           </div>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6">
@@ -823,12 +814,16 @@ function LandingPage() {
 
             {/* Ozempic */}
             <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
-              <h3 className="text-xl font-black text-muted-foreground">{t.comparison.ozempic.title}</h3>
+              <h3 className="text-xl font-black text-muted-foreground">
+                {t.comparison.ozempic.title}
+              </h3>
               <p className="text-xs text-muted-foreground mt-1">{t.comparison.ozempic.subtitle}</p>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 {t.comparison.ozempic.items.map((item) => (
                   <li key={item} className="flex gap-2 items-start">
-                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
+                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">
+                      ✕
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -837,12 +832,16 @@ function LandingPage() {
 
             {/* Mounjaro */}
             <div className="rounded-2xl border border-border/40 bg-card/60 p-6">
-              <h3 className="text-xl font-black text-muted-foreground">{t.comparison.mounjaro.title}</h3>
+              <h3 className="text-xl font-black text-muted-foreground">
+                {t.comparison.mounjaro.title}
+              </h3>
               <p className="text-xs text-muted-foreground mt-1">{t.comparison.mounjaro.subtitle}</p>
               <ul className="mt-5 space-y-3 text-sm text-muted-foreground">
                 {t.comparison.mounjaro.items.map((item) => (
                   <li key={item} className="flex gap-2 items-start">
-                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">✕</span>
+                    <span className="w-4 h-4 grid place-items-center text-destructive shrink-0 mt-0.5">
+                      ✕
+                    </span>
                     <span>{item}</span>
                   </li>
                 ))}
@@ -872,11 +871,11 @@ function LandingPage() {
           >
             <CarouselContent className="-ml-4">
               {[
-                { img: pouchAsset.url, ...t.gallery.items[0] },
-                { img: resultsAsset.url, ...t.gallery.items[1] },
-                { img: designAsset.url, ...t.gallery.items[2] },
-                { img: discreetAsset.url, ...t.gallery.items[3] },
-                { img: boxAsset.url, ...t.gallery.items[4] },
+                { img: images.pouch, ...t.gallery.items[0] },
+                { img: images.results, ...t.gallery.items[1] },
+                { img: images.design, ...t.gallery.items[2] },
+                { img: images.discreet, ...t.gallery.items[3] },
+                { img: images.box, ...t.gallery.items[4] },
               ].map((card) => (
                 <CarouselItem
                   key={card.title}
@@ -914,8 +913,6 @@ function LandingPage() {
               <CarouselNext className="static translate-y-0 bg-primary/15 border-primary/40 text-primary hover:bg-primary hover:text-primary-foreground" />
             </div>
           </Carousel>
-
-
         </div>
       </section>
 
@@ -924,7 +921,9 @@ function LandingPage() {
         <div className="max-w-5xl mx-auto text-center">
           <span className="eyebrow">{t.eyebrow5}</span>
           <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-            {t.testimonials.titleStart}<span className="text-primary">{t.testimonials.titleAccent}</span>{t.testimonials.titleEnd}
+            {t.testimonials.titleStart}
+            <span className="text-primary">{t.testimonials.titleAccent}</span>
+            {t.testimonials.titleEnd}
           </h2>
 
           <div className="mt-12 grid md:grid-cols-3 gap-6 text-left">
@@ -985,7 +984,11 @@ function LandingPage() {
               <Flame className="w-3.5 h-3.5" /> {t.bonus.eyebrow}
             </span>
             <h2 className="mt-3 text-3xl sm:text-4xl md:text-5xl font-black">
-              {t.bonus.titleStart}<span className="text-primary">{t.bonus.titleAccent1}</span>{t.bonus.titleMid}<span className="text-primary">{t.bonus.titleAccent2}</span>{t.bonus.titleEnd}
+              {t.bonus.titleStart}
+              <span className="text-primary">{t.bonus.titleAccent1}</span>
+              {t.bonus.titleMid}
+              <span className="text-primary">{t.bonus.titleAccent2}</span>
+              {t.bonus.titleEnd}
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-muted-foreground leading-relaxed">
               {t.bonus.subtitle}
@@ -994,13 +997,13 @@ function LandingPage() {
 
           <div className="mt-10 grid md:grid-cols-2 gap-10 items-center">
             <div className="grid grid-cols-2 gap-4">
-              {[app1, app2].map((img, i) => (
+              {[images.app1, images.app2].map((img, i) => (
                 <div
                   key={i}
                   className="rounded-2xl overflow-hidden border border-primary/30 bg-card shadow-[0_20px_60px_-25px_rgba(74,141,255,0.5)]"
                 >
                   <img
-                    src={img.url}
+                    src={img}
                     alt={`Purisaki Life app screenshot ${i + 1}`}
                     className="w-full h-auto"
                     loading="lazy"
@@ -1023,9 +1026,13 @@ function LandingPage() {
               <div className="mt-6 inline-flex items-center gap-3 rounded-xl border border-primary/40 bg-primary/10 px-4 py-3">
                 <span className="text-2xl">🎁</span>
                 <div className="text-left">
-                  <div className="text-xs uppercase tracking-widest text-muted-foreground">{t.bonus.valueLabel}</div>
+                  <div className="text-xs uppercase tracking-widest text-muted-foreground">
+                    {t.bonus.valueLabel}
+                  </div>
                   <div className="font-black">
-                    <span className="line-through text-muted-foreground mr-2">{t.bonus.valueWas}</span>
+                    <span className="line-through text-muted-foreground mr-2">
+                      {t.bonus.valueWas}
+                    </span>
                     <span className="text-primary">{t.bonus.valueNow}</span>
                   </div>
                 </div>
@@ -1039,9 +1046,7 @@ function LandingPage() {
               >
                 {t.bonus.cta} <ArrowRight className="w-4 h-4" />
               </a>
-              <p className="text-xs text-muted-foreground mt-3">
-                {t.bonus.note}
-              </p>
+              <p className="text-xs text-muted-foreground mt-3">{t.bonus.note}</p>
             </div>
           </div>
         </div>
@@ -1053,9 +1058,15 @@ function LandingPage() {
           <div className="mx-auto w-40 h-40 rounded-full grid place-items-center border-4 border-primary/60 bg-primary/10 text-center">
             <div>
               <div className="text-4xl font-black text-primary">30</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dias" : "Day"}</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "Dinheiro" : "Money"}</div>
-              <div className="text-[10px] font-bold tracking-widest uppercase">{lang === "PT" ? "De Volta" : "Back"}</div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">
+                {lang === "PT" ? "Dias" : "Day"}
+              </div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">
+                {lang === "PT" ? "Dinheiro" : "Money"}
+              </div>
+              <div className="text-[10px] font-bold tracking-widest uppercase">
+                {lang === "PT" ? "De Volta" : "Back"}
+              </div>
             </div>
           </div>
           <div>
@@ -1068,9 +1079,7 @@ function LandingPage() {
       {/* FINAL CTA */}
       <section className="px-4 pb-24">
         <div className="max-w-3xl mx-auto rounded-3xl border border-primary/40 bg-gradient-to-b from-card to-black/60 p-10 text-center shadow-[0_30px_120px_-30px_rgba(74,141,255,0.45)]">
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">
-            {t.finalH}
-          </h2>
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-black leading-tight">{t.finalH}</h2>
           <p className="mt-4 text-muted-foreground">{t.finalSub}</p>
           <a
             href={CTA_URL}
@@ -1081,18 +1090,22 @@ function LandingPage() {
             {t.finalCta} <ArrowRight className="w-4 h-4" />
           </a>
           <div className="mt-6 flex flex-wrap justify-center gap-4 text-xs text-muted-foreground">
-            <span className="inline-flex items-center gap-1.5"><Truck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[0]}</span>
-            <span className="inline-flex items-center gap-1.5"><ShieldCheck className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[1]}</span>
-            <span className="inline-flex items-center gap-1.5"><Lock className="w-3.5 h-3.5 text-primary"/> {t.finalTrust[2]}</span>
+            <span className="inline-flex items-center gap-1.5">
+              <Truck className="w-3.5 h-3.5 text-primary" /> {t.finalTrust[0]}
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <ShieldCheck className="w-3.5 h-3.5 text-primary" /> {t.finalTrust[1]}
+            </span>
+            <span className="inline-flex items-center gap-1.5">
+              <Lock className="w-3.5 h-3.5 text-primary" /> {t.finalTrust[2]}
+            </span>
           </div>
         </div>
       </section>
 
       <footer className="border-t border-white/5 py-8 text-center text-xs text-muted-foreground px-4">
         <p>© {new Date().getFullYear()} Berberine Patch. All rights reserved.</p>
-        <p className="mt-2 max-w-3xl mx-auto">
-          {t.footerDisclaimer}
-        </p>
+        <p className="mt-2 max-w-3xl mx-auto">{t.footerDisclaimer}</p>
       </footer>
     </div>
   );
