@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Wrapper de start para deploy em Node.js.
- * Valida variáveis de ambiente antes de iniciar o servidor Nitro.
+ * Valida variáveis de ambiente básicas antes de iniciar o servidor Nitro.
  *
  * Espera que o build já tenha sido gerado com:
  *   NITRO_PRESET=node-server npm run build
@@ -11,7 +11,18 @@
  *   PORT=8080 node scripts/start.mjs
  */
 
-import { validateEnv } from "../src/lib/env.ts";
+function validateEnv() {
+  const NODE_ENV = process.env.NODE_ENV || "production";
+  const rawPort = process.env.PORT || process.env.NITRO_PORT || "3000";
+  const PORT = Number(rawPort);
+  const HOST = process.env.HOST || process.env.NITRO_HOST || "0.0.0.0";
+
+  if (Number.isNaN(PORT) || PORT < 1 || PORT > 65535) {
+    throw new Error(`[ENV ERROR] PORT="${rawPort}" não é uma porta válida (1-65535).`);
+  }
+
+  return { NODE_ENV, PORT, HOST };
+}
 
 try {
   const env = validateEnv();
