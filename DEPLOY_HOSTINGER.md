@@ -44,8 +44,13 @@ publicado) — é isso que a Hostinger valida.
   Render).
 
 ## Rotas no Hostinger (fallback SPA)
-Se ao navegar para uma rota e dar refresh aparecer 404, adicione um
-`.htaccess` em `public_html/` com:
+O arquivo `.htaccess` já está incluído no build (em `dist/static/.htaccess`)
+e também em `public/.htaccess` para que os builds futuros o copiem
+automaticamente. Não é necessário criá-lo manualmente.
+
+Se mesmo assim aparecer 404 ao dar refresh, confirme que o arquivo
+`.htaccess` foi enviado para `public_html/` junto com o restante do conteúdo
+de `dist/static/`.
 
 ```apache
 <IfModule mod_rewrite.c>
